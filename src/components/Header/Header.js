@@ -1,15 +1,16 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo/LOGO.svg";
+import Nav from "../Nav/Nav";
+import { Link } from "react-router-dom";
 
-function Header() {
+export default function Header() {
   return (
     <header className="header">
       <figure className="header__fig">
         <img className="logo" src={logo} alt="logo de l'agence kasa" />
       </figure>
+      <Nav className="navbar-header">
+        <div></div>
+      </Nav>
     </header>
   );
 }
-
-export default Header;
