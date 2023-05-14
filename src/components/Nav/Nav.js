@@ -1,15 +1,15 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-export default function Nav() {
+ export default function Nav() {   
   return (
-    <Nav className="nav-header">
-      <NavLink to="/" className="nav-header_link-home">
+     <nav className="nav-header">
+      <Link to="/" className="nav-header_link-home">
         Accueil
-      </NavLink>
-      <NavLink to="/About" className="nav-header_link-about">
+      </Link>
+      <Link to="/About" className="nav-header_link-about">
         A Propos
-      </NavLink>
-    </Nav>
-  );
-}
+      </Link>
+   </nav>
+   );
+ }

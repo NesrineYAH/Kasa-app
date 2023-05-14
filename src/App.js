@@ -8,17 +8,20 @@ import "./App.scss";
 
 const App = () => {
   return (
-    <div className="App">
-      <Header className="header">
-        <Nav className="Nav">
-          <HashRouter>
-            <Routes>
-              <Route path="/" element={<NavLink replace to="/Accueil" />} />
-              <Route path="Acceuil" element={<Home />} />
-              <Route path="About" element={<About />} />
-            </Routes>
-          </HashRouter>
-        </Nav>
+    <div className="App ">
+      <Header>
+        <HashRouter>
+          {/* <nav>
+            <NavLink to="/">Accueil</NavLink>
+            <NavLink to="/about">A Propos</NavLink>
+          </nav> */}
+          <Nav></Nav>
+          <Routes>
+            <Route path="/" element={<NavLink replace to="/acceuil" />} />
+            <Route path="/acceuil" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </HashRouter>
       </Header>
     </div>
   );
