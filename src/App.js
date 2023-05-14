@@ -11,14 +11,9 @@ const App = () => {
     <div className="App ">
       <Header>
         <HashRouter>
-          {/* <nav>
-            <NavLink to="/">Accueil</NavLink>
-            <NavLink to="/about">A Propos</NavLink>
-          </nav> */}
           <Nav></Nav>
           <Routes>
-            <Route path="/" element={<NavLink replace to="/acceuil" />} />
-            <Route path="/acceuil" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </HashRouter>

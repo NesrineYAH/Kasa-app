@@ -12,7 +12,17 @@
 }
 
 body {
+    max-width: $wmax;
+    min-width: $wmin;
+    margin: auto;
+    background-color: $tertiary-color;
 
-    background-color: rgb(242, 175, 175);
+}
 
+.banner-conteneur {
+    // margin-right:100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

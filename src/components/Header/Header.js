@@ -8,7 +8,7 @@ export default function Header(props) {
       <figure className="header__fig">
         <img className="logo" src={logo} alt="logo de l'agence kasa" />
       </figure>
-      <nav className="navbar-header">
+      <nav className="nav-header">
         <div>{props.children}</div>
       </nav>
     </header>
