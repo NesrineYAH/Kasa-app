@@ -1,0 +1,37 @@
+.Banner__conteneur {
+    width: 110%;
+    height: 100%;
+    position: relative;
+    right: 15%;
+    top: 120px;
+    margin-bottom: 25px;
+
+
+    .Banner__img {
+        border-radius: 35px;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+        opacity: 1;
+    }
+
+    .Banner__border {
+        border-radius: 35px;
+        background-color: $background-color;
+        height: 100%;
+        opacity: 0.3;
+    }
+
+
+
+    .Banner__h1 {
+        position: absolute;
+        left: 27%;
+        top: 27%;
+        font-weight: 600;
+        font-style: Medium;
+        font-size: 35px;
+        line-height: 100%;
+        color: $tertiary-color;
+    }
+}

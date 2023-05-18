@@ -5,6 +5,9 @@
 @import './styles/Header.scss';
 @import './styles/variable.scss';
 @import './styles/mixins.scss';
+@import './styles/banner.scss';
+@import './styles/EspaceLogement.scss';
+
 
 * {
 
@@ -16,13 +19,6 @@ body {
     min-width: $wmin;
     margin: auto;
     background-color: $tertiary-color;
+    overflow-x: hidden;
 
-}
-
-.banner-conteneur {
-    // margin-right:100px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
