@@ -1,0 +1,10 @@
+.Fiche-container {
+    color: $primary-color;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .Fiche-logement {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }

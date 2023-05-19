@@ -1,14 +1,14 @@
 .Banner__conteneur {
-    width: 110%;
-    height: 100%;
-    position: relative;
-    right: 15%;
-    top: 120px;
-    margin-bottom: 25px;
+    width: 95%;
+    height: 250px;
+    position: absolute;
+    left: 4%;
+    margin-top: 120px;
+    margin-bottom: 50px;
 
 
     .Banner__img {
-        border-radius: 35px;
+        @include medium-radius;
         height: 100%;
         object-fit: cover;
         width: 100%;
@@ -26,12 +26,13 @@
 
     .Banner__h1 {
         position: absolute;
-        left: 27%;
+        left: 32%;
         top: 27%;
         font-weight: 600;
         font-style: Medium;
         font-size: 35px;
         line-height: 100%;
         color: $tertiary-color;
+        // margin-left: 5%;
     }
 }

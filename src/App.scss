@@ -7,7 +7,10 @@
 @import './styles/mixins.scss';
 @import './styles/banner.scss';
 @import './styles/EspaceLogement.scss';
-
+@import './styles/Card.scss';
+@import './styles/Host.scss';
+@import './styles/Footer.scss';
+@import './styles/FicheLogements.scss';
 
 * {
 
@@ -17,8 +20,14 @@
 body {
     max-width: $wmax;
     min-width: $wmin;
-    margin: auto;
+
+    //margin: auto;
     background-color: $tertiary-color;
     overflow-x: hidden;
 
+}
+
+.App {
+    margin-left: 2%;
+    margin-right: 2%;
 }

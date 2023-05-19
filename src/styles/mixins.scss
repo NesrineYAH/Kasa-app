@@ -1,5 +1,24 @@
-@mixin flex-end{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
+@mixin flex-end {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+@mixin small-radius {
+  border-radius: 15px;
+}
+
+@mixin medium-radius {
+  border-radius: 25px;
+}
+
+@mixin boxShadow {
+  box-shadow: rgba(255, 96, 96, 0.9) 0 0 22px 6px;
+}
+
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

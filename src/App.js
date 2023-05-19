@@ -6,12 +6,14 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import FicheLogements from "./pages/logements/FicheLogements";
 import Card from "./components/Card/Card";
+import Footer from "./components/Footer/Footer";
 import "./App.scss";
 
 const App = () => {
   return (
     <div className="App ">
-      <Header>
+      <main>
+        <Header />
         <HashRouter>
           <Nav></Nav>
           <Routes>
@@ -20,7 +22,8 @@ const App = () => {
             <Route path="/logement/:id" element={<FicheLogements />} />
           </Routes>
         </HashRouter>
-      </Header>
+      </main>
+      <Footer />
     </div>
   );
 };
