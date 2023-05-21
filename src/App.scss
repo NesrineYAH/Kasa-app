@@ -11,6 +11,7 @@
 @import './styles/Host.scss';
 @import './styles/Footer.scss';
 @import './styles/FicheLogements.scss';
+@import './styles/AboutBanner.scss';
 
 * {
 
@@ -20,8 +21,7 @@
 body {
     max-width: $wmax;
     min-width: $wmin;
-
-    //margin: auto;
+    margin-right: 5%;
     background-color: $tertiary-color;
     overflow-x: hidden;
 
@@ -29,5 +29,5 @@ body {
 
 .App {
     margin-left: 2%;
-    margin-right: 2%;
+
 }
