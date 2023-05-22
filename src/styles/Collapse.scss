@@ -1,0 +1,69 @@
+.collapse {
+
+    width: 89%;
+    height: 80%;
+    margin: 20px 0;
+    padding: 50px;
+    gap: 40px;
+    position: absolute;
+    left: 3%;
+    top: 70%;
+    background-color: $secondary-color;
+    @include small-radius
+}
+
+// .collapse__disply__BigContainer {
+//     @include flex-center;
+//     align-self: center;
+// }
+
+.collapse__disply__container {
+
+    @include flex-start;
+    max-width: 100%;
+    width: 80%;
+    color: $primary-color;
+    height: 100px;
+    @include small-radius;
+
+    &__title {
+        padding: 50px;
+        @include flex-between;
+
+        background-color: $primary-color;
+        margin: 0 auto;
+        margin-top: 1.5em;
+        border-radius: 15px;
+    }
+
+    &__content {
+        @include flex-between;
+        background-color: $secondary-color;
+
+        max-width: 100%;
+        width: 80%;
+        height: 80px;
+        border-radius: 5px;
+        color: $primary-color;
+    }
+
+    h2 {
+        @include flex-between;
+        // width: 100%;
+
+        color: #fff;
+        background-color: $primary-color;
+        padding: 20px;
+    }
+
+
+
+    p {
+        color: $primary-color;
+
+        i {
+            cursor: pointer;
+            color: $tertiary-color;
+        }
+    }
+}

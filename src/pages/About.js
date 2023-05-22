@@ -3,17 +3,17 @@ import React from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import AboutBanner from "../components/AboutBanner/AboutBanner";
-// import Collapse from "../components/Collapse/Collapse";
-// import CollapseData from "../data/collapses.json";
+import Collapse from "../components/Collapse/Collapse";
+import CollapseData from "../data/collapses.json";
 
 const About = () => {
   return (
-    <div className="about-Page">
+    <div className="about">
       <Header />
       <main>
         <AboutBanner />
-        {/* <div className="collapse">
-          <div className="collapse__disply">
+        <div className="collapse">
+          <div className="collapse__disply__BigConatiner">
             {CollapseData.map((item) => {
               return (
                 <div key={item.id}>
@@ -22,8 +22,9 @@ const About = () => {
               );
             })}
           </div>
-        </div> */}
+        </div>
       </main>
+
       <Footer />
     </div>
   );
