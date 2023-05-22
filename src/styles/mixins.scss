@@ -25,25 +25,26 @@
 
 @mixin flex-center {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
-// %flex-between {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-// }
 @mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-start {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-@mixin font {
+@mixin font($size, $weight) {
   border: 10px, solid, $primary-color;
   font-size: ($size);
   font-style: normal;
   font-weight: $weight;
-  line-height: 142.6%;
+  line-height: 140%;
 }
