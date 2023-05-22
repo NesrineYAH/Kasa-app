@@ -27,6 +27,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+
 }
 
 @mixin flex-between {
@@ -47,4 +50,10 @@
   font-style: normal;
   font-weight: $weight;
   line-height: 140%;
+}
+
+@mixin flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }

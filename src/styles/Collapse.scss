@@ -1,61 +1,67 @@
 .collapse {
 
-    width: 89%;
-    height: 100%;
-    margin: 20px 0;
-    padding: 50px;
+    width: 70%;
+    // max-width: 100%;
+    height: 70%;
+    padding: 60px;
     gap: 40px;
     position: absolute;
-    left: 3%;
+    left: 11%;
     top: 70%;
     background-color: $secondary-color;
-    @include small-radius
+    @include small-radius;
+    align-items: center;
+
 }
 
 .collapse__disply__BigContainer {
-    /* max-width: 80%;
-    width: 80%;*/
-    @include flex-center;
 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .collapse__disply__container {
 
     max-width: 100%;
-    width: 80%;
-    // color: $primary-color;
-    height: 100px;
-    // @include small-radius;
-    //background-color: $primary-color;
+    width: 100%;
+    height: 100%;
+
 
     &__title {
         max-width: 100%;
-        width: 80%;
+        width: 100%;
         padding: 50px;
-        //@include flex-start;
-        //  color: #fff;
-
-        background-color: $primary-color;
 
     }
 
     h2 {
-        // width: 100%;
+
         @include font(24px, 500);
         color: #fff;
         background-color: $primary-color;
-        padding: 20px;
+        padding: 12px;
+        @include small-radius;
+
     }
 
 
     p {
         color: $primary-color;
+        @include flex-end;
+
 
         i {
-            @include flex-end;
+            width: 5%;
             height: 20px;
             cursor: pointer;
             color: $tertiary-color;
+            @include flex-end;
+            position: relative;
+            top: 20%;
+            right: 2%;
+            opacity: 1;
         }
     }
 
@@ -65,7 +71,7 @@
 
         max-width: 100%;
         width: 80%;
-        height: 80px;
+        height: 180px;
         border-radius: 5px;
         color: $primary-color;
     }
