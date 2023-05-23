@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import logements from "../../data/logements.json";
 import Card from "../../components/Card/Card";
 import { useParams, Navigate } from "react-router-dom";
-//import Tag from "./Tag";
-//import Collapse from "../collapse/Collapse";
+import Tag from "../../components/Tag/Tag";
+import Collapse from "../../components/Collapse/Collapse";
 import Carrousel from "../../components/Carrousel/Carrousel";
-//import Rate from "./Rate";
+import Rate from "../../components/Rate/Rate";
 import Host from "../../components/Host/Host";
 
 export default function FicheLogements() {
@@ -15,8 +15,8 @@ export default function FicheLogements() {
 
   /* Tags */
   const tagsLogement = ficheLogement?.tags.map((tags, i) => {
-    //return <Tag key={i} nom={tags} />;
-    return <p key={i}>{tags}</p>;
+    return <Tag key={i} nom={tags} />;
+    //return <p key={i}>{tags}</p>;
   });
 
   /* Équipements */
@@ -29,36 +29,36 @@ export default function FicheLogements() {
   });
 
   return (
-    <div style={{ marginTop: "10" + "em" }}>
+    <div>
       {ficheLogement ? (
         <div className="Fiche-container">
           <Carrousel images={ficheLogement?.pictures} />
           <section className="Fiche-logement">
-            <div className="description-info">
-              <div className="description-info__titletags">
-                <div className="description-info__titletags__title">
+            <div className="informations">
+              <div className="informations__titletags">
+                <div className="informations__titletags__title">
                   <span className="titre-logement">{ficheLogement?.title}</span>
                   <span className="endroit-logement">
                     {ficheLogement?.location}
                   </span>
                 </div>
                 {/* Tags */}
-                <div className="description-info__titletags__tags">
+                <div className="informations__titletags__tags">
                   {tagsLogement}
                 </div>
               </div>
 
-              <div className="description-info__proprietaire">
+              <div className="informations__proprietaire">
                 {/* Hosting */}
-                <div className="description-info__proprietaire__nom-prop">
+                <div className="informations__proprietaire__nom-prop">
                   <Host
                     name={ficheLogement?.host.name}
                     image={ficheLogement?.host.picture}
                   />
                 </div>
                 {/* Rating */}
-                <div className="description-info__proprietaire__rate">
-                  {/* <Rate score={ficheLogement.rating} /> */}
+                <div className="informations__proprietaire__rate">
+                  <Rate classement={ficheLogement.rating} />
                   <p>{ficheLogement.rating}</p>
                 </div>
               </div>
@@ -67,14 +67,14 @@ export default function FicheLogements() {
           {/* Collapse */}
           <div className="description-centent">
             <div className="description-centent__description">
-              {/* <Collapse
+              <Collapse
                 title="Description"
                 content={ficheLogement?.description}
-              /> */}
+              />
               <p>{ficheLogement?.description}</p>
             </div>
             <div className="description-centent__equipement">
-              {/* <Collapse title="Équipements" content={equipements} /> */}
+              <Collapse title="Équipements" content={equipements} />
               <div>{equipements}</div>
             </div>
           </div>

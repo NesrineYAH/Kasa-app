@@ -1,0 +1,59 @@
+.Fiche-container {
+  color: $primary-color;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.Fiche-logement {
+  @extend %flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.informations {
+  // @extend %flex-column;
+
+  &__titletags {
+    @extend %flex-column;
+
+    width: 80%;
+
+
+    &__title {
+
+      @include flex-column;
+      margin-bottom: 15px;
+      @include font(30px, 600);
+
+      .titre_logement {
+        margin-left: 5px;
+
+      }
+
+      .endroit-logement {
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+    }
+
+    &__tags {
+      // width: 10%;
+      // height: 40px;
+      display: flex;
+      // flex-direction: row;
+      flex-wrap: wrap;
+      jutify-content: space-between;
+      // align-items: center;
+      // font-weight: 800;
+      // color: $tertiary-color;
+      // color: #000;
+      // background-color: $primary-color;
+      // border-radius: 10px;
+      // margin-bottom: 50px;
+    }
+  }
+
+
+}

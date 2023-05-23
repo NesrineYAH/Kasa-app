@@ -1,6 +1,7 @@
 import React from "react";
-//import { Routes, Route, HashRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
+import Nav from "../../components/Nav/Nav";
 import Footer from "../../components/Footer/Footer";
 import AboutBanner from "../../components/AboutBanner/AboutBanner";
 import Collapse from "../../components/Collapse/Collapse";
@@ -9,7 +10,9 @@ import CollapseData from "../../data/collapses.json";
 const About = () => {
   return (
     <div className="about">
-      <Header />
+      {/* <Header>
+        <Nav></Nav>
+      </Header> */}
       <main>
         <AboutBanner />
         <div className="collapse">

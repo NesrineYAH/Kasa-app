@@ -1,19 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import './styles/setting.scss';
-@import './styles/Nav.scss';
-@import './styles/Header.scss';
-@import './styles/variable.scss';
-@import './styles/mixins.scss';
-@import './styles/banner.scss';
-@import './styles/EspaceLogement.scss';
-@import './styles/Card.scss';
-@import './styles/Host.scss';
-@import './styles/Footer.scss';
-@import './styles/FicheLogements.scss';
-@import './styles/AboutBanner.scss';
-@import './styles/Collapse.scss';
-@import './styles/placeholder.scss';
+@import './styles/outils/setting.scss';
+@import './styles/outils/variable.scss';
+@import './styles/outils/mixins.scss';
+@import './styles/outils/placeholder.scss';
+@import './styles/components/Nav.scss';
+@import './styles/components/Header.scss';
+@import './styles/components/banner.scss';
+@import './styles/components/EspaceLogement.scss';
+@import './styles/components/Card.scss';
+@import './styles/components/Host.scss';
+@import './styles/components/Footer.scss';
+@import './styles/components/FicheLogements.scss';
+@import './styles/components/AboutBanner.scss';
+@import './styles/components/Collapse.scss';
+@import './styles/components/ErrorPage.scss';
+@import './styles/components/Tag.scss';
+
 
 
 * {
