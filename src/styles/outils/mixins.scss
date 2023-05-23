@@ -1,5 +1,5 @@
 @mixin small-radius {
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 @mixin medium-radius {
@@ -50,5 +50,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+}
+@mixin flex-page-logement{
+  display: flex;
+   flex-direction: row;
+   justify-content: space-between;
 
 }

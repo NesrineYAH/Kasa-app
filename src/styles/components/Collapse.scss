@@ -14,30 +14,30 @@
 
 }
 
-.collapse__disply__BigContainer {
+// .collapse__disply__BigContainer {
 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     align-items: center;
+// }
 
 .collapse__disply__container {
 
-    max-width: 100%;
-    width: 100%;
+    // max-width: 100%;
+    //width: 100%;
     height: 100%;
 
 
     &__title {
-        max-width: 100%;
-        width: 100%;
+        //max-width: 100%;
+        //width: 100%;
         padding: 50px;
 
     }
 
     h2 {
-
+        //width: 60%;
         @include font(24px, 500);
         color: #fff;
         background-color: $primary-color;

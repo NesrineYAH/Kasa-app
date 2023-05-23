@@ -49,17 +49,18 @@ export default function FicheLogements() {
               </div>
 
               <div className="informations__proprietaire">
-                {/* Hosting */}
-                <div className="informations__proprietaire__nom-prop">
+                {/* Host */}
+
+                <div className="informations__proprietaire__nom-propre">
                   <Host
                     name={ficheLogement?.host.name}
                     image={ficheLogement?.host.picture}
                   />
                 </div>
-                {/* Rating */}
+                {/* Rate */}
                 <div className="informations__proprietaire__rate">
                   <Rate classement={ficheLogement.rating} />
-                  <p>{ficheLogement.rating}</p>
+                  <p>{ficheLogement.Rate}</p>
                 </div>
               </div>
             </div>
