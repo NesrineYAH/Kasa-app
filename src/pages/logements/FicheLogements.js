@@ -32,7 +32,7 @@ export default function FicheLogements() {
     <div>
       {ficheLogement ? (
         <div className="Fiche-container">
-          <Carrousel images={ficheLogement?.pictures} />
+          <Carrousel slides={ficheLogement?.pictures} />
           <section className="Fiche-logement">
             <div className="informations">
               <div className="informations__titletags">
@@ -72,11 +72,11 @@ export default function FicheLogements() {
                 title="Description"
                 content={ficheLogement?.description}
               />
-              <p>{ficheLogement?.description}</p>
+              {/* <p>{ficheLogement?.description}</p> */}
             </div>
             <div className="description-centent__equipement">
               <Collapse title="Équipements" content={equipements} />
-              <div>{equipements}</div>
+              {/* <div>{equipements}</div> */}
             </div>
           </div>
         </div>
