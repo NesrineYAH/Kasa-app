@@ -14,7 +14,7 @@ export default function Carrousel({ slides }) {
   const prevImage = () => {
     setCurrent(current === 0 ? length - 1 : current - 1); // on repart au dernier slide quand on est au premier
   };
- 
+
   return (
     <section className="Carrousel__Contanier">
       {length > 1 && (
