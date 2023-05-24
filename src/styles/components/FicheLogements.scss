@@ -95,5 +95,17 @@
 
 .description-centent {
   width: 100%;
-  @include flex-column;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+
+
+  &__description {
+    width: 90%;
+  }
+
+  &__equipement {
+    width: 90%;
+  }
 }
