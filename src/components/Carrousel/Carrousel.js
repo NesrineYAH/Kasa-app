@@ -12,7 +12,7 @@ export default function Carrousel({ slides }) {
   //   };
   //   /**Function pour l'image suivante */
   //    const prevImage = () => {
- //     setCurrent(current === 0 ? length - 1 : current - 1); // on repart au dernier slide quand on est au premier
+  //     setCurrent(current === 0 ? length - 1 : current - 1); // on repart au dernier slide quand on est au premier
   //   };
 
   //   return (
@@ -82,7 +82,9 @@ export default function Carrousel({ slides }) {
             onClick={prevImage}
           />
 
-          <p className="slide">{current + 1}/length</p>
+          <p className="slide">
+            {current + 1}/{length}
+          </p>
         </>
       )}
     </section>
