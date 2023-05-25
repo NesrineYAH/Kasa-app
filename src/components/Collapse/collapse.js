@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import ChevronBas from "../../assets/images/Collapse/vectorBas.svg";
-import ChevronUp from "../../assets/images/Collapse/vectorHaut.svg";
+import arrow from "../../assets/images/Collapse/arrow.png";
 
 const Collapse = ({ title, content }) => {
   //déclaration d'un état en utlisant useState()
@@ -12,15 +11,15 @@ const Collapse = ({ title, content }) => {
   return (
     //afficher un collapse fermé par défaut et l'utlisateur clique sur le chevron pour ouvrire et apparaitre le content
     <div className="collapse__disply__container">
-      <div className="collapse__disply__title">
-        <h2>{title}</h2>
-        <p onClick={display}>
-          {Open ? (
-            <i className="fa-solid fa-chevron-up"></i>
-          ) : (
-            <i className="fa-solid fa-chevron-down"></i>
-          )}
-        </p>
+      <div>
+        <h2 className="collapse__disply__title" onClick={display}>
+          {title}
+          <img
+            className={display ? "arrow arrow__up" : "arrow arrow__down"}
+            src={arrow}
+            alt="show content"
+          />
+        </h2>
       </div>
       <div className="collapse__disply__content">
         {Open && <p>{content}</p>}

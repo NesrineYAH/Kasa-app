@@ -1,11 +1,11 @@
 .collapse {
 
     width: 70%;
-    height: 70%;
-    padding: 60px;
+    height: 100%;
+    // padding: 30px;
     gap: 40px;
     position: absolute;
-    left: 11%;
+    left: 15%;
     top: 70%;
     background-color: $secondary-color;
     @include small-radius;
@@ -26,60 +26,79 @@
     width: 800px;
     height: 100%;
 
-    &__title {
-        //max-width: 100%;
+    .collapse__disply__container {
+
         width: 100%;
-        padding: 50px;
+        background-color: $primary-color;
+    }
+
+    .collapse__disply__title {
+        //max-width: 100%;
+        width: 80%;
+        height: 30px;
         background-color: $primary-color;
         @include flex-page-logement;
+        color: #fff;
+
+        .arrow__up {
+            width: 3%;
+            height: 12px;
+            align-self: center;
+            transform: rotate(0deg);
+        }
+
+        .arrow__down {
+            transform: rotate(180deg);
+        }
+
     }
 
     h2 {
-        width: 85%;
-        @include font(24px, 500);
+        height: 25px;
+        @include font(20px, 500);
         color: #fff;
-        background-color: $primary-color;
-        padding: 12px;
+        padding: 10px;
         border-radius: 5px;
-        @include flex-page-logement;
     }
-
 
     p {
         color: $primary-color;
         @include flex-end;
         overflow: hidden;
-        width: 86%;
+        width: 80%;
         align-items: center;
 
-
-        i {
-            width: 5%;
-            height: 20px;
-            cursor: pointer;
-            color: $tertiary-color;
-            color: #ff6060;
-            @include flex-end;
-
-        }
-
-        .fa-chevron-up {
-            background-image: url(../../assets/images/Collapse/vectorHaut.svg);
-        }
-
-        .fa-chevron-down {
-            background-image: url(../../assets/images/Collapse/vectorHaut.svg);
-        }
     }
+
+    i {
+        width: 5%;
+        height: 20px;
+        cursor: pointer;
+        color: $tertiary-color;
+        color: #ff6060;
+        @include flex-end;
+
+    }
+
+
 
     &__content {
         @include flex-start;
         background-color: $secondary-color;
-
-        max-width: 100%;
         width: 80%;
         height: 180px;
         border-radius: 5px;
         color: $primary-color;
+    }
+
+    p {
+        @include font(16px, 400);
+        color: $primary-color;
+        // margin: 0 auto;
+        // padding: 0.8em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
     }
 }

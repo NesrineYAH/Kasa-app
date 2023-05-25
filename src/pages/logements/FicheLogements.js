@@ -76,7 +76,7 @@ export default function FicheLogements() {
             </div>
             <div className="description-centent__equipement">
               <Collapse title="Équipements" content={equipements} />
-              {/* <div>{equipements}</div> */}
+              {/*<div>{equipements}</div> */}
             </div>
           </div>
         </div>
