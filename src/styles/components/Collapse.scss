@@ -14,31 +14,35 @@
 
 }
 
-.collapse__disply__BigContainer {
+.collapseDisply__BigContainer {
 
+    width: 800px;
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-self: center;
+    margin: 50px;
+
+
 }
 
-.collapse__disply__container {
+.collapseDisply__container {
+    max-width: 100%;
     width: 800px;
-    height: 100%;
+    height: 50px;
+    background-color: $primary-color;
+    @include small-radius;
+    margin-bottom: 50px;
 
-    .collapse__disply__container {
+    .collapseDisply__title {
 
-        width: 100%;
-        background-color: $primary-color;
-    }
-
-    .collapse__disply__title {
-        //max-width: 100%;
-        width: 80%;
-        height: 30px;
+        width: 95%;
+        height: 10px;
         background-color: $primary-color;
         @include flex-page-logement;
         color: #fff;
+        margin-bottom: 50px;
 
         .arrow__up {
             width: 3%;
@@ -83,12 +87,13 @@
 
 
     &__content {
-        @include flex-start;
+        //@include flex-start;
         background-color: $secondary-color;
         width: 80%;
-        height: 180px;
+        height: 100%;
         border-radius: 5px;
         color: $primary-color;
+
     }
 
     p {

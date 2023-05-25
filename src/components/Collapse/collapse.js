@@ -10,20 +10,17 @@ const Collapse = ({ title, content }) => {
   };
   return (
     //afficher un collapse fermé par défaut et l'utlisateur clique sur le chevron pour ouvrire et apparaitre le content
-    <div className="collapse__disply__container">
-      <div>
-        <h2 className="collapse__disply__title" onClick={display}>
-          {title}
-          <img
-            className={display ? "arrow arrow__up" : "arrow arrow__down"}
-            src={arrow}
-            alt="show content"
-          />
-        </h2>
-      </div>
-      <div className="collapse__disply__content">
-        {Open && <p>{content}</p>}
-      </div>
+    <div className="collapseDisply__container">
+      <h2 className="collapseDisply__title" onClick={display}>
+        {title}
+        <img
+          className={Open ? "arrow arrow__up" : "arrow arrow__down"}
+          src={arrow}
+          alt="show content"
+        />
+      </h2>
+
+      <div className="collapseDisply__content">{Open && <p>{content}</p>}</div>
     </div>
   );
 };

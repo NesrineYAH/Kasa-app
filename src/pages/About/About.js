@@ -16,7 +16,7 @@ const About = () => {
       <main>
         <AboutBanner />
         <div className="collapse">
-          <div className="collapse__disply__BigContanier">
+          <div className="collapseDisply__BigContanier">
             {CollapseData.map((item) => {
               return (
                 <div key={item.id}>
