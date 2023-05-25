@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-//import ChevronBas from "../../assets/images/Collapse/vectorBas.svg";
-//import ChevronUp from "../../assets/images/Collapse/vectorHaut.svg";
+import ChevronBas from "../../assets/images/Collapse/vectorBas.svg";
+import ChevronUp from "../../assets/images/Collapse/vectorHaut.svg";
 
 const Collapse = ({ title, content }) => {
   //déclaration d'un état en utlisant useState()

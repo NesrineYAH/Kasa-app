@@ -1,13 +1,14 @@
 .Fiche-container {
   color: $primary-color;
   flex-direction: column;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .Fiche-logement {
-  @extend %flex-start;
+  // @extend %flex-start;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
   margin-top: 5%;
 }
@@ -98,6 +99,7 @@
   height: 100px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: 50px;
 
 
@@ -107,5 +109,6 @@
 
   &__equipement {
     width: 90%;
+
   }
 }
