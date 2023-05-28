@@ -1,25 +1,21 @@
 .collapse {
 
-    width: 70%;
+    max-width: 100%;
     height: 100%;
     padding: 30px;
     gap: 40px;
     position: absolute;
-    left: 15%;
-    top: 70%;
-    //background-color: $secondary-color;
+    left: 0;
+    right: 0;
+    top: 55%;
     @include small-radius;
     @include flex-center;
-    align-items: center;
 
-    //    @media screen and (min-width: $breakpoint-desktop) {
-    // width: 80%;
-    // }
 
 }
 
 .collapseDisply__BigContainer {
-
+    max-width: 100%;
     width: 1000px;
     height: 100%;
     display: flex;
@@ -27,8 +23,6 @@
     flex-direction: column;
     align-self: center;
     //margin: 50px;
-
-
 }
 
 .collapseDisply__container {
@@ -40,89 +34,97 @@
     @include small-radius;
     margin-bottom: 60px;
 
-
     .collapseDisply__title {
 
         width: 95%;
         height: 10px;
         background-color: $primary-color;
-        @include flex-page-logement;
+        //  @include flex-page-logement;
         color: #fff;
         cursor: pointer;
         margin-bottom: 50px;
-
-        .arrow {
-
-            width: 15px;
-            // margin-top: 10px;
-            color: $tertiary-color;
-            transition: all 0.2s ease-in-out;
-
-            @media screen and (max-width: 1230px) {
-                width: 12px;
-            }
-        }
-
-        .arrow__up {
-            transform: rotate(0deg);
-        }
-
-        .arrow__down {
-            align-self: center;
-            transform: rotate(180deg);
-        }
-
     }
 
     h2 {
+        //width: 90%;
         @include font(20px, 500);
-        color: #fff;
+        color: $tertiary-color;
         padding: 10px;
         border-radius: 5px;
-    }
-
-    p {
-        color: $primary-color;
-
+        @include flex-page-logement;
     }
 
 
+    .arrow {
+        @include flex-end;
+        width: 15px;
+        color: $tertiary-color;
+        transition: all 0.2s ease-in-out;
 
-    &__content {
-        //display: flex;
-        // flex-direction: column;
-        background-color: $secondary-color;
+        @media screen and (max-width: 1230px) {
+            width: 12px;
+        }
+    }
 
-        width: 95%;
+    .arrow__up {
+        width: 15px;
+        transform: rotate(0deg);
+    }
+
+    .arrow__down {
+        width: 15px;
+        align-self: center;
+        transform: rotate(180deg);
+    }
+
+
+    .collapseDisplay__content {
+        width: 100%;
         height: auto;
         border-radius: 5px;
         color: $primary-color;
+        background-color: $secondary-color;
         visibility: visible;
         opacity: 1;
-        margin-top: -30px;
         transition: visibility 0.5s ease-in-out,
             opacity 0.5s ease-in-out,
             height 0.2s ease-in-out;
-
-        &_content_hidden {
-
-            visibility: hidden;
-            opacity: 0;
-            height: 0;
-        }
-
     }
 
     p {
         @include font(16px, 400);
         color: $primary-color;
+        background-color: $secondary-color;
         margin: 0 auto;
-        // padding: 0.8em;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: flex-start;
+    }
+
+}
+
+@media screen and (max-width: $small) {
+    .collapse {
+        width: 88%;
+    }
+
+    .collapseDisply__BigContainer {
+        max-width: 50%;
+        height: 100%;
+    }
+
+    .collapseDisply__container {
+        min-width: 45%;
+        width: 400px;
+        height: 50px;
+    }
+
+    .collapseDisply__title {
+        width: 90%;
 
     }
 
+    .collapseDisplay__content {
+        width: 100%;
+        margin-top: -30px;
+
+    }
 
 }

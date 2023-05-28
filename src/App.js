@@ -9,6 +9,7 @@ import FicheLogements from "./pages/logements/FicheLogements";
 import Footer from "./components/Footer/Footer";
 import Error from "./pages/Error/Error";
 import "./App.scss";
+import EspaceLogement from "./components/EspaceLogement/EspaceLogement";
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
         <Header />
         <HashRouter>
           <Nav></Nav>
-          <Routes>
+          <Routes>           
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/logement/:id" element={<FicheLogements />} />
@@ -25,7 +26,9 @@ const App = () => {
           </Routes>
         </HashRouter>
       </main>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };

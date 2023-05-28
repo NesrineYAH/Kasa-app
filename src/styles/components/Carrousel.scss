@@ -1,5 +1,5 @@
 .Carrousel__Contanier {
-    width: 100%;
+    width: 96%;
     height: 420px;
     background-position: center;
     background-size: cover;
@@ -53,6 +53,11 @@
         width: 20px;
         cursor: pointer;
         color: $tertiary-color;
+    }
+
+    @media screen and (max-width: $small) {
+        width: 96%;
+        height: 300px;
     }
 
 }

@@ -1,3 +1,9 @@
+@mixin body-position {
+  max-width: $max;
+ // min-width: $min;
+  margin: auto;
+}
+
 @mixin small-radius {
   border-radius: 5px;
 }
@@ -63,30 +69,4 @@
 @mixin WH-full {
   width: 100%;
   height: 100%;
-}
-
-@mixin rightArrow-style {
-  display: flex;
-  position: absolute;
-  font-size: 1.5rem;
-  top: 42%;
-  right: 82%;
-  width: 12px;
-  height: 20px;
-  z-index: 10;
-  cursor: pointer;
-  color: $tertiary-color;
-
-}
-
-@mixin leftArrow-style {
-  display: flex;
-  position: absolute;
-  font-size: 1.5rem;
-  top: 42%;
-  left: 12%;
-  height: 20px;
-  width: 12px;
-  cursor: pointer;
-  color: $tertiary-color;
 }

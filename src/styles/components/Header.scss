@@ -2,27 +2,45 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-    width: 90%;
+
+    max-width: 95%;
+    width: 95%;
     height: 100px;
     position: absolute;
-    left: 4%;
+    left: 3%;
     top: 0%;
     border: 2px, solid, #ff6060;
 
-    // @media screen and (min-width: $small) {
-    //     margin: 40px 100px 49px 100px;
-    //   }
+    @media screen and (max-width: $small) {
+        min-width: 40%;
+        height: 60px;
+    }
 
 
     &__fig {
-        position: absolute;
-        left: -2%;
-        top: 2%;
+        // position: absolute;
+        // left: -2%;
+        // top: 2%;
+        height: 100%;
+
+        margin-bottom: 50px;
+
+        @media screen and (max-width: $small) {
+            height: 60%;
+            margin-top: 30px;
+        }
+
+        @media screen and (max-width: $medium) {
+            height: 60%;
+            margin-bottom: 50px;
+        }
     }
 
     &__logo {
-        margin-bottom: 50px;
+        height: 60%;
+
+        @media screen and (max-width: $small) {
+            height: 60%;
+        }
     }
 }
