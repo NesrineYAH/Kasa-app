@@ -19,8 +19,10 @@ const Collapse = ({ title, content }) => {
           alt="show content"
         />
       </h2>
-
-      <div className="collapseDisply__content">{Open && <p>{content}</p>}</div>
+      {/* Si le collapse est à TRUE alors il affichera la description */}
+      <div className="collapseDisply__content ">
+        {Open && <p className="Open">{content}</p>}
+      </div>
     </div>
   );
 };

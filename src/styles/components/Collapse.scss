@@ -2,38 +2,44 @@
 
     width: 70%;
     height: 100%;
-    // padding: 30px;
+    padding: 30px;
     gap: 40px;
     position: absolute;
     left: 15%;
     top: 70%;
-    background-color: $secondary-color;
+    //background-color: $secondary-color;
     @include small-radius;
     @include flex-center;
     align-items: center;
+
+    //    @media screen and (min-width: $breakpoint-desktop) {
+    // width: 80%;
+    // }
 
 }
 
 .collapseDisply__BigContainer {
 
-    width: 800px;
+    width: 1000px;
     height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-self: center;
-    margin: 50px;
+    //margin: 50px;
 
 
 }
 
 .collapseDisply__container {
     max-width: 100%;
-    width: 800px;
+    width: 1000px;
     height: 50px;
+    //gap: 15px;
     background-color: $primary-color;
     @include small-radius;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+
 
     .collapseDisply__title {
 
@@ -42,23 +48,33 @@
         background-color: $primary-color;
         @include flex-page-logement;
         color: #fff;
+        cursor: pointer;
         margin-bottom: 50px;
 
+        .arrow {
+
+            width: 15px;
+            // margin-top: 10px;
+            color: $tertiary-color;
+            transition: all 0.2s ease-in-out;
+
+            @media screen and (max-width: 1230px) {
+                width: 12px;
+            }
+        }
+
         .arrow__up {
-            width: 3%;
-            height: 12px;
-            align-self: center;
             transform: rotate(0deg);
         }
 
         .arrow__down {
+            align-self: center;
             transform: rotate(180deg);
         }
 
     }
 
     h2 {
-        height: 25px;
         @include font(20px, 500);
         color: #fff;
         padding: 10px;
@@ -67,43 +83,46 @@
 
     p {
         color: $primary-color;
-        @include flex-end;
-        overflow: hidden;
-        width: 80%;
-        align-items: center;
-
-    }
-
-    i {
-        width: 5%;
-        height: 20px;
-        cursor: pointer;
-        color: $tertiary-color;
-        color: #ff6060;
-        @include flex-end;
 
     }
 
 
 
     &__content {
-        //@include flex-start;
+        //display: flex;
+        // flex-direction: column;
         background-color: $secondary-color;
-        width: 80%;
-        height: 100%;
+
+        width: 95%;
+        height: auto;
         border-radius: 5px;
         color: $primary-color;
+        visibility: visible;
+        opacity: 1;
+        margin-top: -30px;
+        transition: visibility 0.5s ease-in-out,
+            opacity 0.5s ease-in-out,
+            height 0.2s ease-in-out;
+
+        &_content_hidden {
+
+            visibility: hidden;
+            opacity: 0;
+            height: 0;
+        }
 
     }
 
     p {
         @include font(16px, 400);
         color: $primary-color;
-        // margin: 0 auto;
+        margin: 0 auto;
         // padding: 0.8em;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: flex-start;
 
     }
+
+
 }

@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+@import './styles/outils/bases.scss';
 @import './styles/outils/setting.scss';
 @import './styles/outils/variable.scss';
 @import './styles/outils/mixins.scss';
@@ -17,23 +16,3 @@
 @import './styles/components/ErrorPage.scss';
 @import './styles/components/Tag.scss';
 @import './styles/components/Carrousel.scss';
-
-
-* {
-
-    font-family: "Montserrat", sans-serif;
-}
-
-body {
-    max-width: $wmax;
-    min-width: $wmin;
-    margin-right: 5%;
-    background-color: $tertiary-color;
-    overflow-x: hidden;
-
-}
-
-.App {
-    margin-left: 4%;
-
-}

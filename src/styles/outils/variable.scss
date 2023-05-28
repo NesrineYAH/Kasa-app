@@ -15,12 +15,13 @@ $about-background-mobile: $background-color url(../../assets/images/banner/backg
 $banner-background: $background-color url(../../assets/images/banner/homeBanner.png);
 
 $breakpoints: (
-    small: 350px,
+    small: 480px,
     medium: 768px,
     large: 992px,
     xlarge: 1200px,
 );
+
 $size: 24px;
-$breakpoint-desktop: 769px;
-$wmin: 1400px;
-$wmax: 1600px;
+$breakpoint-desktop: 992px;
+$min: 1400px;
+$max: 1600px;
