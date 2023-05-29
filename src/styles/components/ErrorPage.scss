@@ -18,8 +18,6 @@
         text-align: center;
         @include font(34px, 500);
         margin: 0 11%;
-
-
     }
 
     &__LinkHome {
@@ -33,6 +31,28 @@
         &:hover,
         &:focus {
             text-decoration-line: underline;
+        }
+    }
+
+    @media screen and (max-width: $small) {
+        .errorContainer {
+            width: 100%;
+        }
+
+        &__Number {
+            @include font(100px, 600);
+            margin: 12rem 0 1rem 0;
+            line-height: 150%;
+        }
+
+        &__Text {
+            text-align: center;
+            @include font(24px, 500);
+            margin: 0 11%;
+        }
+
+        &__LinkHome {
+            @include font(14px, 500);
         }
     }
 

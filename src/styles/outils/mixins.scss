@@ -1,7 +1,12 @@
 @mixin body-position {
   max-width: $max;
- // min-width: $min;
+  // min-width: $min;
   margin: auto;
+}
+
+@mixin linear-gradient {
+ // background: linear-gradient(rgba(255, 255, 255, 0) 0%, #00000080);
+  background: linear-gradient(hsla(0, 0%, 100%, 0), rgba(0, 0, 0, .502));
 }
 
 @mixin small-radius {
