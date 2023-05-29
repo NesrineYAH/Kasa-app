@@ -36,7 +36,7 @@
 
     .collapseDisply__title {
 
-        width: 95%;
+        width: 94%;
         height: 10px;
         background-color: $primary-color;
         //  @include flex-page-logement;
@@ -127,4 +127,9 @@
 
     }
 
+    @media screen and (max-width: $medium) {
+        .collapse {
+            width: 88%;
+        }
+    }
 }

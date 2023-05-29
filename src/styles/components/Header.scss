@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     max-width: 95%;
     width: 95%;
     height: 100px;
@@ -12,10 +11,12 @@
     margin: 10px 0 10px 0;
 
     @media screen and (max-width: $small) {
-        min-width: 40%;
-        height: 60px;
+        max-width: 95%;
     }
 
+    @media screen and (max-width: $medium) {
+        max-width: 95%;
+    }
 
     &__fig {
         // position: absolute;

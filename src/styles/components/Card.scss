@@ -4,22 +4,16 @@
     height: 280px;
     border-radius: 25px;
     border: 2px, solid, grey;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    // flex-wrap: wrap;
 
-    @media screen and (min-width: $small) {
+    @media screen and (max-width: $small) {
 
-        max-width: 180px;
-        // width: 500px;
+        max-width: 250px;
         height: 280px
     }
 
-    @media screen and (min-width:$medium) {
+    @media screen and (max-width:$medium) {
 
-        max-width: 100%;
+        max-width: 250px;
         height: 280px;
     }
 
