@@ -1,9 +1,27 @@
 .card {
-    width: 350px;
-    max-width: 100%;
+    width: 380px;
+    min-width: 380px;
     height: 280px;
     border-radius: 25px;
     border: 2px, solid, grey;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // flex-wrap: wrap;
+
+    @media screen and (min-width: $small) {
+
+        max-width: 180px;
+        // width: 500px;
+        height: 280px
+    }
+
+    @media screen and (min-width:$medium) {
+
+        max-width: 100%;
+        height: 280px;
+    }
 
     &__img {
         width: 100%;
@@ -11,33 +29,23 @@
         object-fit: cover;
         @include small-radius;
         cursor: pointer;
-
-
     }
 
-    // &_overlay {
-    //     width: 350px;
-    //     max-width: 100%;
-    //     height: 280px;
-    //     border-radius: 25px;
-    //     position: absolute;
-    //     top: 0;
-    //     //@include linear-gradient;
-
-
-    // }
-
     &__title {
-
         position: relative;
-        bottom: 24%;
-        margin: 15px 20px;
-        color: $tertiary-color;
-        text-decoration: $tertiary-color;
-        //background-color: $primary-color;
-        font-size: 20px;
+        bottom: 25%;
 
-        &:active {
+        color: $tertiary-color;
+        text-decoration: none;
+        @include font(16px, 600);
+        margin: 15px 20px;
+        overflow: hidden;
+
+        &:focus {
+            text-decoration: none;
+        }
+
+        h2 {
             text-decoration: none;
         }
     }
@@ -46,5 +54,4 @@
         transform: scale(1.02);
         transition: transform 300ms;
     }
-
 }
