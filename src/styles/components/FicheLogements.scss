@@ -109,8 +109,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 50px;
-  // gap: 20px;
 
+  // gap: 20px;
+  @media screen and (max-width: $medium) {
+    width: 100%;
+    margin-top: 25%;
+  }
 
   &__description {
     width: 45%;
