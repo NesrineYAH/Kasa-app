@@ -1,26 +1,55 @@
 .collapse {
-    width: 100%;
+    width: 95%;
     height: 100%;
     padding: 30px;
-    //gap: 40px;
     position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 55%;
+    left: 0.5%;
+    top: 45%;
     @include small-radius;
     @include flex-center;
+
+
+
+    @media screen and (max-width: $medium) {
+        width: 95%;
+    }
+
+    @media screen and (max-width: $large) {
+        width: 94%;
+    }
+
+    @media screen and (max-width: $small) {
+
+        width: 90%;
+        left: -1.5%;
+
+    }
+
 }
 
-.collapseDisply__container {
-    max-width: 90%;
-    width: 1000px;
-    height: 50px;
-    background-color: $primary-color;
-    @include small-radius;
-    margin-bottom: 40px;
+.collapseDisply {
+    width: $collapseWidth;
 
-    .collapseDisply__title {
-        width: 94%;
+    @media screen and (max-width: $small) {
+        width: 100%;
+    }
+
+    @media screen and (max-width: $medium) {
+        width: 100%;
+    }
+
+
+    &__container {
+
+        height: 50px;
+        background-color: $primary-color;
+        // @include small-radius;
+        margin-bottom: 40px;
+        border-radius: 5px;
+    }
+
+    &__title {
+        // width: 94%;
         height: 10px;
         background-color: $primary-color;
         color: $tertiary-color;
@@ -29,7 +58,7 @@
     }
 
     h2 {
-        //width: 90%;
+
         @include font(20px, 500);
         color: $tertiary-color;
         padding: 10px;
@@ -60,7 +89,8 @@
     }
 
 
-    .collapseDisplay__content {
+
+    &__content {
         width: 100%;
         height: auto;
         color: $primary-color;
@@ -75,56 +105,5 @@
         background-color: $secondary-color;
         margin: 0 auto;
         @include small-radius;
-    }
-
-}
-
-@media screen and (max-width: $small) {
-    .collapse {
-        width: 60%;
-        position: absolute;
-        left: 0%;
-        right: 0%;
-    }
-
-    .collapseDisply__container {
-        width: 400px;
-    }
-}
-
-.collapseDisplay__content {
-    width: 100%;
-    margin-top: -30px;
-}
-
-
-
-@media screen and (max-width: $medium) {
-    .collapse {
-        width: 60%;
-        position: absolute;
-        left: 0%;
-        right: 0%;
-        @include flex-center;
-    }
-
-
-    .collapseDisply__container {
-        width: 600px;
-    }
-}
-
-@media screen and (max-width: $large) {
-    .collapse {
-        width: 92%;
-        position: absolute;
-        left: 0%;
-        right: 0%;
-        @include flex-center;
-    }
-
-    .collapseDisply__container {
-        width: 800px;
-
     }
 }
