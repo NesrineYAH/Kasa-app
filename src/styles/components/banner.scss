@@ -31,12 +31,22 @@
     }
 
     @media screen and (max-width: $small) {
+
+
+        .Banner__conteneur {
+            height: 120px;
+        }
+
         .Banner__h1 {
             font-size: 25px;
-            line-height: 100%;
             text-align: center;
             position: absolute;
-            left: 5%;
+            left: 3%;
         }
+
+        .Banner__img {
+            @include small-radius;
+        }
+
     }
 }

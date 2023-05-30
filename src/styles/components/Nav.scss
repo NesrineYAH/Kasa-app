@@ -1,7 +1,7 @@
 .nav-header {
 
     @include flex-end;
-    max-width: 25%;
+    max-width: 38%;
     margin-right: 30px;
     position: absolute;
     right: 0;
@@ -14,8 +14,16 @@
         position: absolute;
         right: -30px;
 
-        .nav-header__link-about {
-            font-size: 14px;
+        .nav-header__link-about .nav-header__link-home {
+            @include font(13px, 500);
+            width: 25px;
+
+            &:focus {
+                font-size: 13px;
+                text-decoration: underline;
+            }
+
+
         }
     }
 

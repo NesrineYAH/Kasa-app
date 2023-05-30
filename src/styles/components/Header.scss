@@ -16,24 +16,22 @@
 
     @media screen and (max-width: $medium) {
         max-width: 95%;
+
     }
 
     &__fig {
-        // position: absolute;
-        // left: -2%;
-        // top: 2%;
         height: 100%;
-
-        margin-bottom: 50px;
+        margin: 0 10px 0 0;
+        align-self: center;
 
         @media screen and (max-width: $small) {
             height: 60%;
-            margin-top: 30px;
+
         }
 
         @media screen and (max-width: $medium) {
-            height: 60%;
-            margin-bottom: 50px;
+            height: 75%;
+
         }
     }
 
@@ -41,7 +39,7 @@
         height: 60%;
 
         @media screen and (max-width: $small) {
-            height: 60%;
+            height: 70%;
         }
     }
 }
