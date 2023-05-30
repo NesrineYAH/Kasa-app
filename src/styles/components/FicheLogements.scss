@@ -8,6 +8,7 @@
 
   @media screen and (max-width: $small) {
     margin-top: 22%;
+    margin-right: 2%;
   }
 
   @media screen and (max-width: $medium) {
@@ -16,16 +17,15 @@
 }
 
 .Fiche-logement {
-  // @extend %flex-start;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 96%;
-  margin-top: 2%;
+  margin-top: 4%;
 }
 
 .informations {
-  //  @extend %flex-column;
+
   @include flex-page-logement;
   width: 100%;
 
@@ -33,23 +33,26 @@
     @extend %flex-column;
     width: 75%;
 
-
     &__title {
-
       @include flex-column;
       margin-bottom: 15px;
       @include font(30px, 600);
 
       .titre_logement {
         margin-left: 5px;
-
       }
 
       .endroit-logement {
-        font-size: 18px;
-        font-weight: 500;
+        @include font(18px, 500);
       }
 
+      @media screen and (max-width: $small) {
+        @include font(18px, 500);
+
+        .endroit-logement {
+          @include font(16px, 400);
+        }
+      }
     }
 
     &__tags {
@@ -84,6 +87,14 @@
         @include flex-end;
         margin-left: 90px;
       }
+
+      @media screen and (max-width: $small) {
+        .Host__name {
+          @include font(16px, 600);
+          position: relative;
+          left: 10%;
+        }
+      }
     }
 
     &__rate {
@@ -94,7 +105,17 @@
       .etoile {
         width: 30px;
         height: 30px;
+      }
 
+      @media screen and (max-width: $small) {
+        position: absolute;
+        left: 40%;
+        bottom: 16%;
+
+        .etoile {
+          width: 20px;
+          height: 20px;
+        }
       }
     }
   }
@@ -113,7 +134,7 @@
   // gap: 20px;
   @media screen and (max-width: $medium) {
     width: 100%;
-    margin-top: 25%;
+    margin-top: 30%;
   }
 
   &__description {

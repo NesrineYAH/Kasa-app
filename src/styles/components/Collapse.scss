@@ -4,18 +4,18 @@
     padding: 30px;
     position: absolute;
     left: 0.5%;
-    top: 45%;
+    top: 35%;
     @include small-radius;
     @include flex-center;
 
-
-
     @media screen and (max-width: $medium) {
-        width: 95%;
+        width: 90%;
+        left: 0%;
     }
 
     @media screen and (max-width: $large) {
-        width: 94%;
+        width: 90%;
+        left: 2%;
     }
 
     @media screen and (max-width: $small) {
@@ -38,6 +38,9 @@
         width: 100%;
     }
 
+    @media screen and (max-width: $large) {
+        width: 80%;
+    }
 
     &__container {
 
@@ -49,46 +52,50 @@
     }
 
     &__title {
-        // width: 94%;
+        width: 94%;
         height: 10px;
         background-color: $primary-color;
         color: $tertiary-color;
         cursor: pointer;
         margin-bottom: 50px;
-    }
-
-    h2 {
-
+        @include flex-page-logement;
         @include font(20px, 500);
-        color: $tertiary-color;
         padding: 10px;
         border-radius: 5px;
-        @include flex-page-logement;
-    }
 
-    .arrow {
-        @include flex-end;
-        width: 15px;
-        color: $tertiary-color;
-        transition: all 0.2s ease-in-out;
 
-        @media screen and (max-width: 1230px) {
-            width: 12px;
+        h2 {
+
+            color: $tertiary-color;
+            border-radius: 5px;
+
         }
+
+        .arrow {
+            @include flex-end;
+            width: 15px;
+            color: $tertiary-color;
+            transition: all 0.2s ease-in-out;
+            padding-bottom: 20px;
+
+            @media screen and (max-width: 1230px) {
+                width: 12px;
+            }
+        }
+
+        .arrow__up {
+            width: 15px;
+            transform: rotate(0deg);
+
+        }
+
+        .arrow__down {
+            width: 15px;
+            align-self: center;
+            transform: rotate(180deg);
+        }
+
     }
-
-    .arrow__up {
-        width: 15px;
-        transform: rotate(0deg);
-    }
-
-    .arrow__down {
-        width: 15px;
-        align-self: center;
-        transform: rotate(180deg);
-    }
-
-
 
     &__content {
         width: 100%;
