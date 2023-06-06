@@ -18,7 +18,7 @@ const App = () => {
         <Header />
         <HashRouter>
           <Nav></Nav>
-          <Routes>           
+          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/logement/:id" element={<FicheLogements />} />
@@ -26,9 +26,7 @@ const App = () => {
           </Routes>
         </HashRouter>
       </main>
-      <div>
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 };
