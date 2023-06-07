@@ -24,8 +24,8 @@ const Collapse = ({ title, content }) => {
     // </div>
 
     <div className="collapseDisply__container">
-      <div className="collapseDisply__title" >
-        <h2 className="title"  onClick={display}>
+      <div className="collapseDisply__title">
+        <h2 className="title" onClick={display}>
           {title}
           <img
             className={Open ? "arrow arrow__up" : "arrow arrow__down"}

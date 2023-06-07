@@ -1,22 +1,21 @@
 .collapse {
     width: 95%;
-    height: 100%;
     padding: 30px;
     position: absolute;
     left: 0.5%;
-    top: 35%;
+    top: 50%;
     @include small-radius;
     @include flex-center;
 
 
     @media screen and (max-width: $medium) {
-        width: 90%;
+        width: 100%;
         left: 0%;
     }
 
     @media screen and (max-width: $large) {
-        width: 90%;
-        left: 2%;
+        width: 100%;
+        left: -5%;
     }
 
     @media screen and (max-width: $small) {
@@ -30,8 +29,6 @@
 
 .collapseDisply {
     width: $collapseWidth;
-    gap: 25px;
-
 
     @media screen and (max-width: $small) {
         width: 100%;
@@ -46,13 +43,15 @@
     }
 
     &__container {
-        height: 70px;
-        @include small-radius; //06/06
-        margin-bottom: 40px;
+        // margin-bottom: 20px;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @media screen and (max-width: $small) {
+            width: 100%;
+        }
 
     }
 
@@ -65,19 +64,15 @@
         cursor: pointer;
         @include flex-page-logement;
         margin-top: 30px;
-        margin-bottom: 0px;
+        margin-bottom: 12px;
         padding: 5px;
         border-radius: 5px;
-        // align-items: center;
-        position: relative;
-        z-index: 1;
 
         @media screen and (max-width: $small) {
-            width: 90%;
+            width: 100%;
         }
 
         .title {
-
             width: 99%;
             align-items: center;
             @include font(20px, 500);
@@ -110,40 +105,36 @@
 
     &__content {
         width: 100%;
-        background-color: #E3E3E3;
-        animation: slide 1s ease-in;
-        margin-top: -1rem;
+        background-color: $secondary-color;
+        margin-top: -1.2rem;
         margin-bottom: 1rem;
         position: relative;
         z-index: -1;
         border-radius: 5px;
+        animation: slide 1s ease-in-out;
+        -webkit-animation: slide 1s ease-in-out;
+
+        p {
+            @include font(16px, 400);
+            color: $primary-color;
+            padding-left: 5px;
+            padding-top: 10px;
+            line-height: 25px;
+        }
     }
-
-
-    p {
-        @include font(16px, 500);
-        color: $primary-color;
-        background-color: $secondary-color;
-        @include small-radius;
-        padding-left: 10px;
-        padding-top: 10px;
-        line-height: 25px;
-
-    }
-
 }
 
-@keyframes slide {
 
+@keyframes slide {
     0% {
         overflow: hidden;
-        // max-height: 0%;
+        max-height: 0%;
         opacity: 0;
     }
 
     50% {
         opacity: 1;
-        // max-height: 100%;
+        max-height: 100%;
     }
 
     100% {

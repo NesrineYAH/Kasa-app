@@ -21,11 +21,10 @@
   flex-direction: column;
   justify-content: center;
   width: 96%;
-  margin-top: 4%;
+  // margin-top: 2%;
 }
 
 .informations {
-
   @include flex-page-logement;
   width: 100%;
 
@@ -36,7 +35,7 @@
     &__title {
       @include flex-column;
       margin-bottom: 15px;
-      @include font(30px, 600);
+      @include font(35px, 600);
 
       .titre_logement {
         margin-left: 5px;
@@ -56,27 +55,24 @@
     }
 
     &__tags {
-
       display: flex;
       flex-wrap: wrap;
     }
   }
 
   .informations__proprietaire {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flex-page-logement;
 
 
     &__nom-propre {
-      @extend %flex-rowCenter;
+      margin-bottom: 50px;
 
       .Host__name {
         @include font(18px, 500);
-        font-style: normal;
         text-align: right;
         margin-bottom: -58px;
         width: 50px;
+
       }
 
       .Host__img {
@@ -99,7 +95,6 @@
 
     &__rate {
       @include flex-end;
-      margin-top: 125px;
       margin-left: -150px;
 
       .etoile {
@@ -123,26 +118,21 @@
 
 .description-centent {
   width: 96%;
-  height: 100px;
-  display: flex;
+  @include flex-page-logement;
   align-content: center;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 50px;
 
-  // gap: 20px;
   @media screen and (max-width: $medium) {
     width: 100%;
     margin-top: 30%;
   }
 
   &__description {
-    width: 45%;
+    width: 47%;
   }
 
   &__equipement {
-    width: 48%;
+    width: 47%;
   }
 
   @media screen and (max-width: $small) {
@@ -161,10 +151,6 @@
       &__equipement {
         width: 96%;
       }
-    }
-
-    .Fiche-logement {
-      margin-bottom: 50px;
     }
   }
 }
