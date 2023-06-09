@@ -6,6 +6,11 @@
     margin-top: 120px;
     margin-bottom: 50px;
 
+    @media screen and (max-width: $small) {
+        width: 82%;
+        position: absolute;
+        left: 10%;
+    }
 
 
     .Banner__img {
