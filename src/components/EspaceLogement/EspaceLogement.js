@@ -9,7 +9,7 @@ export default function EspaceLogement() {
       {logements.map((logement) => {
         return (
           <div key={logement.id}>
-            <Link to={`/logement/${logement.id}`}>
+            <Link to={`/logement/${logement.id}`} className="Link">
               <Card image={logement.cover} title={logement.title}></Card>
             </Link>
           </div>

@@ -1,9 +1,12 @@
+@import "Collapse.scss";
+
+
 .Fiche-container {
   color: $primary-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 12%;
+  margin-top: 8%;
   margin-left: 2%;
 
   @media screen and (max-width: $small) {
@@ -21,7 +24,12 @@
   flex-direction: column;
   justify-content: center;
   width: 96%;
-  // margin-top: 2%;
+  margin-top: 2%;
+
+  @media screen and (max-width: $small) {
+    margin-top: 3%;
+
+  }
 }
 
 .informations {
@@ -35,7 +43,7 @@
     &__title {
       @include flex-column;
       margin-bottom: 15px;
-      @include font(35px, 600);
+      @include font(30px, 600);
 
       .titre_logement {
         margin-left: 5px;
@@ -52,6 +60,10 @@
           @include font(16px, 400);
         }
       }
+
+      @media screen and (max-width: $medium) {
+        @include font(18px, 500);
+      }
     }
 
     &__tags {
@@ -63,6 +75,12 @@
   .informations__proprietaire {
     @include flex-page-logement;
 
+    @media screen and (max-width: $small) {
+      @include font(14px, 600);
+      position: absolute;
+      right: 5%;
+      bottom: 15%;
+    }
 
     &__nom-propre {
       margin-bottom: 50px;
@@ -72,7 +90,6 @@
         text-align: right;
         margin-bottom: -58px;
         width: 50px;
-
       }
 
       .Host__img {
@@ -86,16 +103,16 @@
 
       @media screen and (max-width: $small) {
         .Host__name {
-          @include font(16px, 600);
-          position: relative;
-          left: 10%;
+          @include font(14px, 600);
         }
       }
     }
 
     &__rate {
       @include flex-end;
-      margin-left: -150px;
+      position: absolute;
+      right: 4%;
+      bottom: -3%;
 
       .etoile {
         width: 30px;
@@ -103,14 +120,24 @@
       }
 
       @media screen and (max-width: $small) {
-        position: absolute;
-        left: 40%;
-        bottom: 16%;
+        @include flex-start;
+        position: relative;
+        // right: 4%;
+        left: 45%;
+        margin-top: -10%;
 
+        // margin-left: 80%;
         .etoile {
-          width: 20px;
-          height: 20px;
+          width: 18px;
+          height: 18px;
         }
+      }
+
+      @media screen and (max-width: $medium) {
+        @include flex-end;
+        position: absolute;
+        left: 14%;
+        bottom: 20%;
       }
     }
   }
@@ -122,30 +149,55 @@
   align-content: center;
   flex-wrap: wrap;
 
-  @media screen and (max-width: $medium) {
-    width: 100%;
-    margin-top: 30%;
-  }
-
   &__description {
     width: 47%;
+    // height: 40px;
+    // @include font(15px, 500);
+    // background-color: $primary-color;
+    // color: $tertiary-color;
+    // cursor: pointer;
+    // @include flex-page-logement;
+    // margin-top: 30px;
+    // margin-bottom: 12px;
+    // padding: 5px;
+    // border-radius: 5px;
   }
 
   &__equipement {
     width: 47%;
+    // height: 40px;
+    // @include font(15px, 500);
+    // background-color: $primary-color;
+    // color: $tertiary-color;
+    // cursor: pointer;
+    // @include flex-page-logement;
+    // margin-top: 30px;
+    // margin-bottom: 12px;
+    // padding: 5px;
+    // border-radius: 5px;
   }
 
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
+    width: 100%;
+    margin-top: 8%;
 
-    .Fiche-logement {
-      margin-bottom: 50px;
+    &__description {
+      width: 45%;
     }
 
+    &__equipement {
+      width: 45%;
+    }
+  }
+
+
+  @media screen and (max-width: $small) {
     .description-centent {
       margin-top: 150px;
 
       &__description {
         width: 96%;
+
       }
 
       &__equipement {

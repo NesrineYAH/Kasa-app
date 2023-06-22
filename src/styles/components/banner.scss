@@ -7,9 +7,9 @@
     margin-bottom: 50px;
 
     @media screen and (max-width: $small) {
-        width: 82%;
+        width: 90%;
         position: absolute;
-        left: 10%;
+        left: 5%;
     }
 
 
@@ -36,21 +36,24 @@
     }
 
     @media screen and (max-width: $small) {
-
-
         .Banner__conteneur {
             height: 120px;
         }
 
         .Banner__h1 {
-            font-size: 25px;
-            text-align: center;
+            @include font(25px, 500);
+            text-align: start;
             position: absolute;
-            left: 3%;
+            left: 6%;
+            top: 10%;
+            width: 75%;
+
+            height: 78px;
         }
 
         .Banner__img {
             @include small-radius;
+            height: 85%;
         }
 
     }

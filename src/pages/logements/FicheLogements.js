@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import logements from "../../data/logements.json";
-import Card from "../../components/Card/Card";
 import { useParams, Navigate } from "react-router-dom";
 import Tag from "../../components/Tag/Tag";
 import Collapse from "../../components/Collapse/Collapse";
@@ -16,15 +14,17 @@ export default function FicheLogements() {
   /* Tags */
   const tagsLogement = ficheLogement?.tags.map((tags, i) => {
     return <Tag key={i} nom={tags} />;
-    //return <p key={i}>{tags}</p>;
   });
 
   /* Équipements */
   const equipements = ficheLogement?.equipments.map((equipment, i) => {
     return (
-      <ul key={i}>
-        <li>{equipment}</li>
-      </ul>
+      <div key={i}>
+        <p className="p">{equipment}</p>
+      </div>
+      // <div key={i}>
+      // <div>{equipment}</div>
+      // </div>
     );
   });
 
@@ -69,14 +69,12 @@ export default function FicheLogements() {
           <div className="description-centent">
             <div className="description-centent__description">
               <Collapse
-                title="Description"
+                title={"Description"}
                 content={ficheLogement?.description}
               />
-              {/* <p>{ficheLogement?.description}</p> */}
             </div>
             <div className="description-centent__equipement">
-              <Collapse title="Équipements" content={equipements} />
-              {/* <div>{equipements}</div> */}
+              <Collapse title={"Équipements"} content={equipements} />
             </div>
           </div>
         </div>

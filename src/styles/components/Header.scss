@@ -11,7 +11,10 @@
     margin: 10px 0 10px 0;
 
     @media screen and (max-width: $small) {
-        max-width: 95%;
+        // max-width: 95%;
+        position: absolute;
+        left: -3.5%;
+
     }
 
     @media screen and (max-width: $medium) {
@@ -31,7 +34,8 @@
 
         @media screen and (max-width: $medium) {
             height: 75%;
-
+            position: absolute;
+            left: -3%;
         }
     }
 
@@ -39,7 +43,7 @@
         height: 60%;
 
         @media screen and (max-width: $small) {
-            height: 70%;
+            height: 60%;
         }
     }
 }

@@ -13,12 +13,11 @@
         height: 300px;
     }
 
-
     .slide {
         display: flex;
         position: relative;
         bottom: -45%;
-        right: 32%;
+        left: 47%;
         height: 20px;
         //align-items: center;
         width: 20%;
@@ -40,7 +39,7 @@
         font-size: 1.5rem;
         top: 53%;
         height: 20px;
-        left: 7%;
+        left: 92%;
         height: 50px;
         width: 20px;
         cursor: pointer;
@@ -56,12 +55,11 @@
     }
 
     .left-Arrow {
-
         display: flex;
         position: absolute;
         font-size: 1.5rem;
         top: 53%;
-        left: 92%;
+        left: 7%;
         height: 50px;
         width: 20px;
         cursor: pointer;

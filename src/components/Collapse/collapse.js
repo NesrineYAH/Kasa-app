@@ -9,33 +9,20 @@ const Collapse = ({ title, content }) => {
     setOpen(!Open);
   };
   return (
-    //afficher un collapse fermé par défaut et l'utlisateur clique sur le chevron pour ouvrire et apparaitre le content
-    // <div className="collapseDisply__container">
-    //   <h2 className="collapseDisply__title" onClick={display}>
-    //     {title}
-    //     <img
-    //       className={Open ? "arrow arrow__up" : "arrow arrow__down"}
-    //       src={arrow}
-    //       alt="show content"
-    //     />
-    //   </h2>
-    //   {/* Si le collapse est à TRUE alors il affichera la description */}
-    //   <div className="collapseDisply__content ">{Open && <p>{content}</p>}</div>
-    // </div>
-
     <div className="collapseDisply__container">
       <div className="collapseDisply__title">
-        <h2 className="title" onClick={display}>
-          {title}
-          <img
-            className={Open ? "arrow arrow__up" : "arrow arrow__down"}
-            src={arrow}
-            alt="show content"
-          />
-        </h2>
+        <h2 className="titleCollapse">{title}</h2>
+        <img
+          onClick={display}
+          className={Open ? "arrow arrow__up" : "arrow arrow__down"}
+          src={arrow}
+          alt="show content"
+        />
       </div>
       {/* Si le collapse est à TRUE alors il affichera la description */}
-      <div className="collapseDisply__content ">{Open && <p>{content}</p>}</div>
+      <div className="collapseDisply__content ">
+        {Open && <div className="p">{content}</div>}
+      </div>
     </div>
   );
 };
