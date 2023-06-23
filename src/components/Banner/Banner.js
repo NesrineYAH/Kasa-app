@@ -1,5 +1,6 @@
 import homeBanner from "../../assets/images/banner/homeBanner.png";
 
+
 const Banner = ({ image, texte }) => {
   return (
     <div className="Banner__conteneur">

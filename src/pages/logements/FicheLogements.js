@@ -20,11 +20,8 @@ export default function FicheLogements() {
   const equipements = ficheLogement?.equipments.map((equipment, i) => {
     return (
       <div key={i}>
-        <p className="p">{equipment}</p>
+        <div>{equipment}</div>
       </div>
-      // <div key={i}>
-      // <div>{equipment}</div>
-      // </div>
     );
   });
 
@@ -47,11 +44,9 @@ export default function FicheLogements() {
                   {tagsLogement}
                 </div>
               </div>
-
               <div className="informations__proprietaire">
                 {/* Host */}
-
-                <div className="informations__proprietaire__nom-propre">
+                <div className="informations__proprietaire__nom-Image">
                   <Host
                     name={ficheLogement?.host.name}
                     image={ficheLogement?.host.picture}
@@ -69,12 +64,12 @@ export default function FicheLogements() {
           <div className="description-centent">
             <div className="description-centent__description">
               <Collapse
-                title={"Description"}
+                title="Description"
                 content={ficheLogement?.description}
               />
             </div>
             <div className="description-centent__equipement">
-              <Collapse title={"Équipements"} content={equipements} />
+              <Collapse title="Équipements" content={equipements} />
             </div>
           </div>
         </div>

@@ -13,23 +13,20 @@
     @media screen and (max-width: $small) {
         // max-width: 95%;
         position: absolute;
-        left: -3.5%;
+        left: 0.5%;
 
     }
 
     @media screen and (max-width: $medium) {
         max-width: 95%;
-
     }
 
     &__fig {
         height: 100%;
-        // margin: 0 10px 0 0;
         align-self: center;
 
         @media screen and (max-width: $small) {
-            height: 60%;
-
+            // height: 50%;
         }
 
         @media screen and (max-width: $medium) {
