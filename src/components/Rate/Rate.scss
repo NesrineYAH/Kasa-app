@@ -1,18 +1,19 @@
 .rate-container {
     position: absolute;
-    bottom: -57%;
     right: 4%;
 
     .etoile {
-        width: 25px;
-        height: 25px;
+        width: 28px;
+        height: 28px;
     }
 
     @media screen and (max-width: $small) {
-        // @include flex-start;
+        display: flex;
+        align-items: flex-start;
         position: absolute;
-        right: 140%;
-        bottom: 48%;
+        right: 69%;
+        margin-top: 10px;
+
 
         .etoile {
             width: 18px;
@@ -22,9 +23,6 @@
 
     @media screen and (max-width: $medium) {
         @include flex-end;
-        // position: absolute;
-        //  left: 14%;
-        // bottom: 12%;
 
         .etoile {
             width: 20px;

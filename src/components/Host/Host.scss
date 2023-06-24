@@ -1,5 +1,6 @@
 .HostContainer {
     @extend %flex-rowEnd;
+    margin-bottom: 20px;
 
     &__name {
         color: #ff6060;

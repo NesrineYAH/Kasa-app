@@ -62,8 +62,16 @@
                 transform: scale(1.02);
             }
         }
+    }
 
-
-
+    @media screen and (min-width:$small) and (max-width: 840px) {
+        width: 50%;
+        height: 60px;
+        position: absolute;
+        right: -35px;
+        .nav-header__link-home,
+        .nav-header__link-about{
+         margin-right: 42px;
+        }
     }
 }

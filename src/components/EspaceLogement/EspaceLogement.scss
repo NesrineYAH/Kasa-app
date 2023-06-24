@@ -1,8 +1,8 @@
 .Espace-Logements {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: -120px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     width: 90%;
     @include medium-radius;
     position: absolute;
@@ -12,21 +12,33 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 40px;
     background-color: $secondary-color;
+    position: relative;
+    min-height: 100vh;
 
     @media screen and (max-width: $small) {
-        width: 95%;
-        @include flex-column;
-        margin-top: -5px;
+        width: 100%;
+        @include flex-center;
+
+        position: relative;
+
+        min-height: 100vh;
         background-color: $tertiary-color;
     }
 
     @media screen and (max-width: $medium) {
         width: 90%;
-       // @include row-center;
+        // @include row-center;
         margin-top: 50px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
 
     }
 
+    @media screen and (min-width:$small) and (max-width: 840px) {
+        background-color: $tertiary-color;
+    }
 }
