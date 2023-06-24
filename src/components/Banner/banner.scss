@@ -1,27 +1,21 @@
 .Banner__conteneur {
     width: 90%;
     height: 200px;
-   
     left: 5%;
-
     position: relative;
-    //height: 20vh;
-    // margin-bottom: 50px;
+
 
 
 
     @media screen and (max-width: $small) {
         width: 90%;
-      //  position: absolute;
+        height: 150px;
+        position: absolute;
         left: 5%;
-        top: 15%;
-        position: relative;
-        height: 35vh;
-        margin-bottom:60px;
+        top: 0%;
+        border-radius: 20px;
+     
     }
-/* @media screen and (min-width:$small) and (max-width: 840px) {
-    background-color: $tertiary-color;
-}*/
 
     .Banner__img {
         @include medium-radius;
@@ -48,6 +42,7 @@
     @media screen and (max-width: $small) {
         .Banner__conteneur {
             height: 120px;
+            font-weight: 700;
         }
 
         .Banner__h1 {
