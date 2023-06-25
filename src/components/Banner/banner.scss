@@ -12,7 +12,7 @@
         height: 150px;
         position: absolute;
         left: 5%;
-        top: 2%;
+        top: 1.5%;
         border-radius: 20px;
         z-index: 1;
         align-self: center;
@@ -57,7 +57,7 @@
         }
 
         .Banner__img {
-            @include small-radius;
+            @include medium-radius;
             height: 85%;
         }
 
