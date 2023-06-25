@@ -1,6 +1,6 @@
 .HostContainer {
     @extend %flex-rowEnd;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     &__name {
         color: #ff6060;
@@ -12,6 +12,7 @@
         @media screen and (max-width: $small) {
             @include font(16px, 600);
             margin-right: -12px;
+
         }
     }
 

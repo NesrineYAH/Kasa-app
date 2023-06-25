@@ -3,8 +3,8 @@
     height: 200px;
     left: 5%;
     position: relative;
-
-
+    top: 0%;
+    z-index: 1;
 
 
     @media screen and (max-width: $small) {
@@ -12,9 +12,10 @@
         height: 150px;
         position: absolute;
         left: 5%;
-        top: 0%;
+        top: 2%;
         border-radius: 20px;
-     
+        z-index: 1;
+        align-self: center;
     }
 
     .Banner__img {
@@ -32,16 +33,15 @@
         top: 27%;
         text-align: center;
         font-weight: 600;
-        //font-style: Medium;
         font-size: 35px;
         line-height: 100%;
         color: $tertiary-color;
-        // margin-left: 5%;
+
     }
 
     @media screen and (max-width: $small) {
         .Banner__conteneur {
-            height: 120px;
+            height: 80px;
             font-weight: 700;
         }
 

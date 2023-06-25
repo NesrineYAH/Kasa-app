@@ -7,7 +7,6 @@
   margin-left: 4%;
 
   @media screen and (max-width: $small) {
-
     margin-right: 2%;
   }
 
@@ -84,9 +83,12 @@
       &__nom-Image {
         width: 56%;
         height: 40px;
+        position: relative;
+        box-sizing: border-box;
 
         @media screen and (max-width: $small) {
           order: 1;
+          margin-top: -35px;
         }
       }
     }
