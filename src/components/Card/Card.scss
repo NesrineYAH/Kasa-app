@@ -19,12 +19,12 @@
     @media screen and (min-width:$small) and (max-width: $medium) {
 
         max-width: 100%;
-          width: 100%;
+        //   width: 80%;
 
     }
 
     @media screen and (max-width:$medium) {
-        max-width: 100%;  
+        max-width: 100%;
     }
 
     &_overlay {

@@ -20,8 +20,9 @@
     }
 
     @media screen and (max-width: $small) {
-        width: 100%;
-        left: -6.5%;
+        width: 97%;
+        left: -7.5%;
+        top: 20%;
     }
 
 
@@ -114,6 +115,7 @@
 
         @media screen and (max-width: $small) {
             padding: 5px;
+            margin-bottom: 0rem;
         }
 
         p {
@@ -122,6 +124,11 @@
             padding-left: 5px;
             padding-top: 8px;
             line-height: 25px;
+
+            @media screen and (max-width: $small) {
+                @include font(13px, 500);
+                padding-top: 5px;
+            }
         }
 
         li {
