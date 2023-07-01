@@ -5,7 +5,7 @@ const AboutBanner = () => {
   return (
     <div className="AboutBanner__conteneur">
       <img
-        className="BannerContainer__img"
+        className="AboutBannerContainer__img"
         src={aboutBanner}
         alt="About-page"
       />

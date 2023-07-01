@@ -1,10 +1,12 @@
 .collapse {
     width: 100%;
     padding: 30px;
-    margin-bottom: 100px;
-    position: absolute;
+    //margin-bottom: 80px;
     @include small-radius;
     @include flex-center;
+    position: relative;
+    margin-top: -22px;
+
 
     @media screen and (min-width: $breakpoint-desktop) {
         width: 100%;
@@ -100,10 +102,10 @@
     &__content {
         width: 100%;
         padding: 5px;
-        margin-bottom: 0rem;
+
         background-color: $secondary-color;
         margin-top: -1.2rem;
-        margin-bottom: -0.5rem;
+        margin-bottom: -1rem;
         position: relative;
         z-index: -1;
         border-radius: 5px;
@@ -117,10 +119,14 @@
         }
 
         p {
-            @include font(16px, 500);
+            @include font(14px, 500);
             color: $primary-color;
             padding: 5px 0px 10px 5px;
             line-height: 25px;
+
+            @media screen and (min-width: $breakpoint-desktop) {
+                @include font(16px, 500);
+            }
         }
 
 

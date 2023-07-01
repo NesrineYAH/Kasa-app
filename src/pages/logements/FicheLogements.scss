@@ -35,7 +35,7 @@
 
   &__titletags {
     @include flex-column;
-   
+
     &__title {
       @include flex-column;
       margin-bottom: 15px;
