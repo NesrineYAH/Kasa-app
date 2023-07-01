@@ -7,9 +7,6 @@ import CollapseData from "../../data/collapses.json";
 const About = () => {
   return (
     <div className="about">
-      {/* <Header>
-        <Nav></Nav>
-      </Header> */}
       <main>
         <AboutBanner />
         <div className="collapse">
