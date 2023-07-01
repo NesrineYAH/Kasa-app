@@ -103,9 +103,12 @@
     @media screen and (min-width: $breakpoint-desktop) {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 15%;
+      justify-content: flex-end;
+      align-items: flex-end;
+      width: 16%;
+      position: absolute;
+      right: 7%;
+
     }
 
     &__nom-Image {
