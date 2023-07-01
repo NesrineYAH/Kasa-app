@@ -1,0 +1,45 @@
+.Espace-Logements {
+    margin-bottom: -50px;
+    padding: 40px 15px 40px 15px;
+    display: grid;
+    width: 100%;
+    position: relative;
+    top: -45px;
+
+    min-height: 100vh;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        width: 90%;
+        display: grid;
+        align-self: center;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 50px;
+        row-gap: 30px;
+        background: $secondary-color;
+        padding: 40px;
+        border-radius: 25px;
+        margin-bottom: -140px;
+        padding-left: 20px;
+        position: relative;
+        left: 5%;
+        top: 220px;
+        min-height: 100vh;
+        margin-top: 35px;
+    }
+
+    @media screen and (min-width: $large) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 50px;
+        row-gap: 30px;
+        background: $secondary-color;
+        padding: 50px;
+        border-radius: 25px;
+        margin-bottom: 40px;
+        position: relative;
+        top: 220px;
+        min-height: 100vh;
+        padding: 50px;
+
+    }
+}

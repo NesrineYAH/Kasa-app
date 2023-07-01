@@ -1,0 +1,17 @@
+//01/07
+.tag-container {
+    display: flex;
+
+    &__button {
+        @include flex-center;
+        background: $primary-color;
+        color: $tertiary-color;
+        margin-top: -10px;
+        align-self: center;
+        @include font(14px, 500);
+        height: 18px;
+        border-radius: 5px;
+        margin-right: 10px;
+        padding: 4px;
+    }
+}

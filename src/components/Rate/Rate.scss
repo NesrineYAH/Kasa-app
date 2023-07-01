@@ -1,0 +1,19 @@
+.rate-container {
+    @include flex-end;
+    margin-bottom: 25px;
+
+    .etoile {
+        width: 15px;
+        height: 15px;
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        margin-left: 70px;
+        margin-top: 25px;
+
+        .etoile {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
