@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import './setting.scss';
 
-//27/06
-* {
 
+//26/06/2023
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
-//27/06
+
+//26/06/2023
 #root {
     display: flex;
     flex-direction: column;
@@ -22,29 +23,21 @@ html {
 }
 
 body {
-    max-width: $max;
-    width: 100%;
-    background-color: $tertiary-color;
+    @include body-position;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    min-height: 100vh;
-    padding-bottom: 350px;
+
+    @media (min-width: $breakpoint-desktop) {
+        max-width: 100%;
+    }
+
 }
 
-
 .main {
+    position: relative;
     min-height: 100vh;
-
 }
 
 .App {
-    margin-right: 1%;
-    padding-bottom: 300px; // de la hauteur de ton footer 
-    min-height: 100vh;
     position: relative;
-
-    //     margin: 0 100px;
-    // }
+    min-height: 100vh;
 }
