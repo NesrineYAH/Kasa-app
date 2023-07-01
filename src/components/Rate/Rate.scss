@@ -1,32 +1,20 @@
+//01/07
 .rate-container {
-    position: absolute;
-    right: 4%;
+    @include flex-end;
+    margin-bottom: 25px;
 
     .etoile {
-        width: 28px;
-        height: 28px;
+        width: 15px;
+        height: 15px;
     }
 
-    @media screen and (max-width: $small) {
-        display: flex;
-        align-items: flex-start;
-        position: absolute;
-        right: 64%;
-        margin-top: 10px;
-
+    @media screen and (min-width: $breakpoint-desktop) {
+        margin-left: 70px;
+        margin-top: 25px;
 
         .etoile {
-            width: 18px;
-            height: 18px;
-        }
-    }
-
-    @media screen and (max-width: $medium) {
-        @include flex-end;
-
-        .etoile {
-            width: 20px;
-            height: 20px;
+            width: 25px;
+            height: 25px;
         }
     }
 }

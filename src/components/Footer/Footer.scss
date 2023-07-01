@@ -1,3 +1,4 @@
+  //01/07
  .footer {
      @include flex-center;
      width: 100%;
@@ -7,7 +8,7 @@
      left: 0;
      right: 0;
      margin-top: auto;
-     margin-bottom: -350px;
+     margin-bottom: -470px;
      background-color: $footer-color;
 
 
@@ -25,18 +26,4 @@
          width: 122px;
          height: 40px;
      }
-
-     /*
-     @media screen and (max-width: $medium) {
-        margin-bottom: -250px;
-     }
-
-     @media screen and (max-width: $large) {
-        margin-bottom: -250px;
-     }
-
-     @media screen and (max-width: $small) {
-         margin-top: auto;
-         margin-bottom: -250px;
-     }*/
  }

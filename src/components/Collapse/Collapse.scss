@@ -1,63 +1,63 @@
+//01/07
 .collapse {
-    width: 95%;
+    width: 100%;
     padding: 30px;
     margin-bottom: 100px;
     position: absolute;
-    left: 0.5%;
-    top: 30%;
     @include small-radius;
     @include flex-center;
 
-    @media screen and (max-width: $medium) {
+
+
+    @media screen and (min-width: $breakpoint-desktop) {
         width: 100%;
-        left: 0%;
-        align-self: center;
+        padding: 30px;
+        margin-bottom: 100px;
+        position: absolute;
+        left: 9%;
+        top: 40%;
+        @include small-radius;
+        @include flex-center;
+        margin-bottom: 25px;
     }
-
-    @media screen and (max-width: $large) {
-        width: 100%;
-        left: -6%;
-    }
-
-    @media screen and (max-width: $small) {
-        width: 97%;
-        left: -7.5%;
-        top: 20%;
-    }
-
-
 }
 
 .collapseDisply {
-    width: $collapseWidth;
+    width: 100%;
 
-    @media screen and (max-width: $small) {
-        //  width: $collapseWidth;
-        width: 100%;
+    @media screen and (min-width: $breakpoint-desktop) {
+        margin-bottom: 100px;
+        width: 80%;
+        position: absolute;
+        left: 0%;
+        top: 40%;
     }
 
-    @media screen and (max-width: $medium) {
-        width: 100%;
-    }
-
-    @media screen and (max-width: $large) {
-        width: 90%;
-    }
 
     &__container {
+        //width: 100%;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
 
-        @media screen and (max-width: $small) {
+        @media screen and (min-width: $breakpoint-desktop) {
+            width: 100%;
+
+
+        }
+    }
+
+    .collapseDisplyLogment {
+
+        // width: 100%;
+        @media screen and (min-width: $breakpoint-desktop) {
             width: 100%;
         }
-
     }
 
     &__title {
-        height: 40px;
+        height: 50px;
         @include font(15px, 500);
         background-color: $primary-color;
         color: $tertiary-color;
@@ -65,10 +65,10 @@
         @include flex-page-logement;
         margin-top: 30px;
         margin-bottom: 12px;
-        padding: 5px;
+        padding: 10px;
         border-radius: 5px;
 
-        @media screen and (max-width: $small) {
+        @media screen and (min-width: $breakpoint-desktop) {
             width: 100%;
         }
 
@@ -104,6 +104,8 @@
 
     &__content {
         width: 100%;
+        padding: 5px;
+        margin-bottom: 0rem;
         background-color: $secondary-color;
         margin-top: -1.2rem;
         margin-bottom: -0.5rem;
@@ -113,30 +115,25 @@
         animation: collapseDrop 1s ease-in-out;
         -webkit-animation: collapseDrop 1s ease-in-out;
 
-        @media screen and (max-width: $small) {
+        @media screen and (min-width: $breakpoint-desktop) {
             padding: 5px;
             margin-bottom: 0rem;
+            width: 100%;
         }
 
         p {
             @include font(16px, 500);
             color: $primary-color;
-            padding-left: 5px;
-            padding-top: 8px;
+            padding: 5px 0px 10px 5px;
             line-height: 25px;
-
-            @media screen and (max-width: $small) {
-                @include font(13px, 500);
-                padding-top: 5px;
-            }
         }
+
 
         li {
             list-style-type: none;
         }
     }
 }
-
 
 @keyframes collapseDrop {
     0% {

@@ -1,24 +1,15 @@
+//01/07
 .AboutBanner__conteneur {
     width: 90%;
-    height: 200px;
-    left: 5%;
+    height: 150px;
     position: relative;
-    top: 0%;
+    top: 7%;
+    left: 5%;
+    border-radius: 20px;
     z-index: 1;
 
 
-    @media screen and (max-width: $small) {
-        width: 90%;
-        height: 150px;
-        position: absolute;
-        left: 5%;
-        top: 9.5%;
-        border-radius: 20px;
-        z-index: 1;
-        align-self: center;
-    }
-
-    .Banner__img {
+    .BannerContainer__img {
         @include medium-radius;
         height: 100%;
         object-fit: cover;
@@ -26,18 +17,13 @@
         opacity: 1;
     }
 
-
-    @media screen and (max-width: $small) {
-        .Banner__conteneur {
-            height: 80px;
-            font-weight: 700;
-        }
-
-
-        .Banner__img {
-            @include medium-radius;
-            height: 85%;
-        }
-
+    @media screen and (min-width: $breakpoint-desktop) {
+        width: 90%;
+        height: 200px;
+        left: 5%;
+        position: relative;
+        top: 0%;
+        z-index: 1;
     }
+
 }

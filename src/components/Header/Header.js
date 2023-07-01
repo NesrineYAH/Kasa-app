@@ -1,6 +1,7 @@
 import logo from "../../assets/images/logo/LOGO.svg";
-import Nav from "../Nav/Nav";
-import { Link } from "react-router-dom";
+//01/07
+//import Nav from "../Nav/Nav";
+//import { Link } from "react-router-dom";
 
 export default function Header(props) {
   return (

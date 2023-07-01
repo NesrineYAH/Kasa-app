@@ -1,60 +1,47 @@
+//01/07
 .errorContainer {
-    width: 100%;
-    height: 100%;
     color: $primary-color;
     @extend %flex-column;
-    gap: 30px;
-    box-sizing: border-box;
-    @include flex-center;
-
+    margin: 22px 22px;
 
     &__Number {
-        @include font(200px, 600);
+        @include flex-center;
+
+        @include font(96px, 700);
         margin: 12rem 0 1rem 0;
-        line-height: 150%;
+
+        @media screen and (min-width: $breakpoint-desktop) {
+            @include font(288px, 700);
+            margin: 0;
+        }
     }
 
     &__Text {
+        @include flex-endCenter;
         text-align: center;
-        @include font(34px, 500);
+        @include font(18px, 500);
         margin: 0 11%;
+
+        @media screen and (min-width: $breakpoint-desktop) {
+            @include font(36px, 500);
+            margin: 0;
+        }
     }
 
     &__LinkHome {
-        @include flex-end;
+        @include flex-endCenter;
         color: $primary-color;
-        @include font(20px, 500);
-        margin-top: 30px;
+        @include font(14px, 500);
+        margin: 3rem 0 2rem 0;
 
-
+        @media screen and (min-width: $breakpoint-desktop) {
+            @include font(18px, 500);
+            margin-top: 7rem;
+        }
 
         &:hover,
         &:focus {
             text-decoration-line: underline;
         }
     }
-
-    @media screen and (max-width: $small) {
-        .errorContainer {
-            width: 100%;
-        }
-
-        &__Number {
-            @include font(100px, 600);
-            margin: 12rem 0 1rem 0;
-            line-height: 150%;
-        }
-
-        &__Text {
-            text-align: center;
-            @include font(24px, 500);
-            margin: 0 11%;
-        }
-
-        &__LinkHome {
-            @include font(14px, 500);
-        }
-    }
-
-
 }

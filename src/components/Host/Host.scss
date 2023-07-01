@@ -1,21 +1,17 @@
+//01/07
 .HostContainer {
     @extend %flex-rowEnd;
-    margin-bottom: 50px;
+    margin-bottom: 0;
 
     &__name {
-        color: #ff6060;
+        color: $primary-color;
         @include font(18px, 500);
         text-align: right;
-        margin-bottom: -58px;
-        width: 50px;
+        margin: 8px -24px 10px 0;
+        text-align: right;
+        width: 80px;
 
-        @media screen and (max-width: $small) {
-            @include font(16px, 600);
-            margin-right: -12px;
-
-        }
     }
-
     &__img {
         border-radius: 50%;
         width: 64px;
@@ -23,9 +19,6 @@
         object-fit: cover;
         @include flex-end;
         margin-left: 35px;
-    }
 
-    @media screen and (max-width: $small) {
-        margin-left: 50px;
     }
 }
