@@ -35,7 +35,7 @@
         height: inherit;
         border-radius: inherit;
         left: 0;
-        opacity: 0.3;
+        opacity: 0.5;
         position: absolute;
         top: 0;
     }
@@ -52,7 +52,6 @@
         &__h1 {
             width: 100%;
             position: absolute;
-            // left: 13%;
             top: 35%;
             text-align: center;
             font-weight: 600;
