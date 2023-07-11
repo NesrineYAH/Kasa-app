@@ -1,7 +1,6 @@
 .collapse {
     width: 100%;
-    padding: 30px;
-    //margin-bottom: 80px;
+    padding: 25px;
     @include small-radius;
     @include flex-center;
     position: relative;
@@ -14,7 +13,7 @@
         margin-bottom: 100px;
         position: absolute;
         left: 9%;
-        top: 40%;
+        top: 36%;
         @include small-radius;
         @include flex-center;
         margin-bottom: 25px;
@@ -102,7 +101,6 @@
     &__content {
         width: 100%;
         padding: 5px;
-
         background-color: $secondary-color;
         margin-top: -1.2rem;
         margin-bottom: -1rem;
@@ -121,7 +119,7 @@
         p {
             @include font(14px, 500);
             color: $primary-color;
-            padding: 5px 0px 10px 5px;
+            padding: 15px 0px 10px 5px;
             line-height: 25px;
 
             @media screen and (min-width: $breakpoint-desktop) {
