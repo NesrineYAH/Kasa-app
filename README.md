@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Formation Développeur Front-End
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## P7-Kasa
 
-## Available Scripts
+Projet n°7 de la formation Developpeur Web OPENCLASSROOMS
 
-In the project directory, you can run:
+### Contexte :
 
-### `npm start`
+Kasa est un site de location d’appartements entre particuliers depuis près de 10 ans. L'entreprise souhaite faire une refonte totale de son site web.
+<img src="./public/Image d&apos;affichage sur Readmi.png">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Objectifs :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Développer l'ensemble de l'application et ses composants avec React, en suivant [les maquettes Figma](https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=3-0&t=orFKblhMVkLYD4Ie-0) fournies. Des composants réutilisables doivent être créés pour les onglets ouvrants et le carrousel de photo.
 
-### `npm test`
+### Back-end / data :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+voila [ce fichier JSON](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json) pour construire le Front qui correspond.
 
-### `npm run build`
+### Cahiers des charges
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Spécifications fonctionnelles:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Quelques précisions sur les fonctionnalités du site :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- la page du site est composée de plusieurs parties ce que l'on appel les compsants (components).Au niveau de la page d'acceuil on trouve 5 composants:
+  Nav
+  Header
+  banner
+  EspaceLogement
+  footer
 
-### `npm run eject`
+Pour le défilement des photos dans l'EscpaceLogemement (composant EspaceLogement) :
+l'utilisateur dans cette partie du page a le choix cliquer n'importe quelle carte pour accéder dans la page de logement pour qu'il ait plus de détails de logement.
+Et au niveau de la page About on trouve
+Nav
+header
+Aboutbanner
+collapse
+footer
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Spécifications techniques
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Découper en composants modulaires et réutilisables
+2. Structure logique des fichiers
+3. Utilisations des évènements
+4. Utiliser les listes en itérant dessus
+5. Utilisation des props entre les composants
+6. La page 404 est renvoyée pour chaque route inexistante, ou si une
+   valeur présente dans l’URL ne fait pas partie des données
+   renseignées
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Langages utilisés :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+HTML5 / CSS3 / SASS / JavaScript / React /github  / Figma
 
-## Learn More
+### Compétences acquises
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Développer les routes d'une application web avec React Router
+- Initialiser une application web avec un framework
+- Créer des composants avec React
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Informations complémentaires
 
-### Code Splitting
+- Visiter le site web : https://nesrineyah.github.io/Kasa-app-YAHOUM/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Installation
 
-### Analyzing the Bundle Size
+## Premiers pas avec l'application Create React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ce projet a été lancé avec [Create React App](https://github.com/facebook/create-react-app)
