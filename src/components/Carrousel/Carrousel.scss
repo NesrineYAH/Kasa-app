@@ -44,37 +44,49 @@
     .right-Arrow {
         display: flex;
         position: absolute;
-        top: 30%;
-        height: 25px;
+        top: 25%;
+        height: 30px;
         left: 88%;
 
-        @media screen and (min-width: $breakpoint-desktop) {
+        @media screen and (min-width: $large) {
             font-size: 2.5rem;
-            top: 34%;
-            height: 20px;
-            left: 91%;
+            top: 37%;
+            left: 92%;
             height: 50px;
             width: 20px;
             cursor: pointer;
             color: $tertiary-color;
         }
+
+        @media screen and (min-width: $breakpoint-desktop) and (max-width:$large) {
+            top: 24%;
+            height: 40px;
+            // left: 88%;
+        }
     }
 
     .left-Arrow {
         position: absolute;
-        top: 30%;
+        top: 25%;
         left: 7.5%;
-        height: 25px;
+        height: 30px;
         display: flex;
         cursor: pointer;
         color: $tertiary-color;
 
-        @media screen and (min-width: $breakpoint-desktop) {
+        @media screen and (min-width: $large) {
             font-size: 2.5rem;
-            top: 34%;
-            left: 7%;
+            top: 37%;
+            left: 6%;
             height: 50px;
             width: 20px;
+        }
+
+
+        @media screen and (min-width: $breakpoint-desktop) and (max-width:$large) {
+            top: 24%;
+            height: 40px;
+            left: 7.5%;
         }
 
     }
