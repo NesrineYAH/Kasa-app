@@ -17,7 +17,7 @@
     &__link-about,
     &__link-home {
         @include font(13px, 500);
-        width: 72px;
+        width: 86px;
         display: flex;
         justify-content: space-between;
         color: $primary-color;
@@ -35,7 +35,7 @@
         }
     }
 
-    @media screen and (min-width: $breakpoint-desktop) {
+    @media screen and (min-width: $breakpoint-desktop) and (max-width:$large) {
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -60,7 +60,6 @@
             line-height: 142.6%;
             text-align: right;
 
-
             &:focus {
                 font-size: 18px;
                 transform: scale(1.05);
@@ -78,5 +77,14 @@
             }
         }
     }
+
+    @media screen and (min-width: $large) and (max-width:$maxBreakpoint) {
+        width: 54%;
+        height: 70px;
+        position: absolute;
+        right: 33px;
+        top: 0%;
+    }
+
 
 }

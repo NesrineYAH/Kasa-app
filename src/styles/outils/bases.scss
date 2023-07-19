@@ -24,9 +24,11 @@ html {
 body {
     @include body-position;
     overflow-x: hidden;
+    margin: auto;
 
     @media screen and (min-width: $breakpoint-desktop) and (max-width:$maxBreakpoint) {
         max-width: 100%;
+        margin: auto;
     }
 
 }
