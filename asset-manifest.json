@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Kasa-app-YAHOUM/static/css/main.ac01690e.css",
+    "main.css": "/Kasa-app-YAHOUM/static/css/main.8ff68888.css",
     "main.js": "/Kasa-app-YAHOUM/static/js/main.e0d676ca.js",
     "static/media/aboutBanner.png": "/Kasa-app-YAHOUM/static/media/aboutBanner.d9590614febb1cea1483.png",
     "static/media/homeBanner.png": "/Kasa-app-YAHOUM/static/media/homeBanner.4c36aadaecae8cfa7756.png",
     "static/media/LOGO.svg": "/Kasa-app-YAHOUM/static/media/LOGO.a6101328193bb3191cbcb50c120ec0d1.svg",
     "index.html": "/Kasa-app-YAHOUM/index.html",
-    "main.ac01690e.css.map": "/Kasa-app-YAHOUM/static/css/main.ac01690e.css.map",
+    "main.8ff68888.css.map": "/Kasa-app-YAHOUM/static/css/main.8ff68888.css.map",
     "main.e0d676ca.js.map": "/Kasa-app-YAHOUM/static/js/main.e0d676ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac01690e.css",
+    "static/css/main.8ff68888.css",
     "static/js/main.e0d676ca.js"
   ]
 }
