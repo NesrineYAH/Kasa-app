@@ -8,15 +8,18 @@
     @include small-radius;
 
     @media screen and (min-width: $breakpoint-desktop) {
-        width: 96%;
+        width: 97%;
         height: 420px;
         background-position: center;
         background-size: cover;
-        margin-bottom: 30px;
         @include small-radius;
-        margin-left: 3px;
+
     }
 
+    @media screen and (min-width: $breakpoint-desktop) and (max-width:$large) {
+        width: 100%;
+        margin-top: 1%;
+    }
 
     .slide {
         opacity: 0;
@@ -42,14 +45,14 @@
         display: flex;
         position: absolute;
         top: 25%;
-        height: 35px;
-        left: 90%;
+        height: 25px;
+        left: 88%;
 
         @media screen and (min-width: $breakpoint-desktop) {
             font-size: 2.5rem;
             top: 40%;
             height: 20px;
-            left: 90%;
+            left: 91%;
             height: 50px;
             width: 20px;
             cursor: pointer;
@@ -60,8 +63,8 @@
     .left-Arrow {
         position: absolute;
         top: 25%;
-        left: 7%;
-        height: 35px;
+        left: 7.5%;
+        height: 25px;
         display: flex;
         cursor: pointer;
         color: $tertiary-color;

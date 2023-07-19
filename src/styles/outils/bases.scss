@@ -25,7 +25,7 @@ body {
     @include body-position;
     overflow-x: hidden;
 
-    @media (min-width: $breakpoint-desktop) {
+    @media screen and (min-width: $breakpoint-desktop) and (max-width:$maxBreakpoint) {
         max-width: 100%;
     }
 

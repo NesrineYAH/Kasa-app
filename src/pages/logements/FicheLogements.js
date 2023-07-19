@@ -55,7 +55,6 @@ export default function FicheLogements() {
                 {/* Rate */}
                 <div className="informations__proprietaire__rate">
                   <Rate classement={ficheLogement.rating} />
-                  <p>{ficheLogement.Rate}</p>
                 </div>
               </div>
             </div>

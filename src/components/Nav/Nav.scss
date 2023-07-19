@@ -10,7 +10,9 @@
     justify-content: flex-end;
     text-transform: uppercase;
 
-
+    &__link-about {
+        margin-right: 15px;
+    }
 
     &__link-about,
     &__link-home {
@@ -20,7 +22,7 @@
         justify-content: space-between;
         color: $primary-color;
         text-decoration: none;
-        margin-right: 18px;
+
 
         &:focus {
             font-size: 13px;
@@ -39,7 +41,7 @@
         justify-content: flex-end;
         margin-right: 30px;
         position: absolute;
-        right: 0;
+        right: -10px;
         top: 0;
         height: 70px;
         width: 40%;
@@ -50,7 +52,7 @@
             justify-content: space-between;
             color: $primary-color;
             text-decoration: none;
-            margin-right: 55px;
+            margin-right: 35px;
             font-size: 18px;
             font-weight: 500;
             width: 100px;
@@ -60,14 +62,13 @@
 
 
             &:focus {
-                font-size: 20px;
+                font-size: 18px;
                 transform: scale(1.05);
 
             }
 
             &:visited {
-                font-size: 20px;
-                transform: scale(1.05);
+
                 text-decoration: underline;
             }
 

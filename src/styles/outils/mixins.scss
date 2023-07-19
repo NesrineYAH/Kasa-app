@@ -1,8 +1,7 @@
-//01/07
 @mixin body-position {
   max-width: $Mmax;
   min-width: $Mmin;
-  margin: auto;
+  // margin: auto;
 }
 
 @mixin linear-cards {
@@ -14,7 +13,7 @@
 }
 
 @mixin small-radius {
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 @mixin medium-radius {

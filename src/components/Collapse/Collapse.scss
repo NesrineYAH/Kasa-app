@@ -1,9 +1,10 @@
 .collapse {
     width: 100%;
-    padding: 25px;
+    padding: 17px;
     @include small-radius;
     @include flex-center;
     position: relative;
+    min-height: 100vh;
     margin-top: -22px;
 
 
@@ -12,8 +13,8 @@
         padding: 30px;
         margin-bottom: 100px;
         position: absolute;
-        left: 9%;
-        top: 43%;
+        left: 10%;
+        top: 70px;
         @include small-radius;
         @include flex-center;
         margin-bottom: 25px;
@@ -28,7 +29,7 @@
         width: 80%;
         position: absolute;
         left: 0%;
-        top: 40%;
+        top: 46%;
     }
 
 
@@ -53,6 +54,7 @@
     }
 
     &__title {
+        width: 100%;
         height: 50px;
         @include font(15px, 500);
         background-color: $primary-color;
@@ -122,7 +124,7 @@
             padding: 15px 0px 10px 5px;
             line-height: 25px;
 
-            @media screen and (min-width: $breakpoint-desktop) {
+            @media screen and (min-width: $breakpoint-desktop) and (max-width:$maxBreakpoint) {
                 @include font(16px, 500);
             }
         }

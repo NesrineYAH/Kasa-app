@@ -16,12 +16,14 @@ $banner-background: $background-color url(../../assets/images/banner/homeBanner.
 
 $Mmin: 375px;
 $Mmax: 768px;
+$maxBreakpoint: 1400px;
 $breakpoint-desktop: 769px;
 
 
 $small: 480px;
-$medium: 992px;
-$large: 1280px;
+$medium: 1050px;
+$large: 1200px;
+
 
 $size: 24px;
 $collapseWidth: 80%;

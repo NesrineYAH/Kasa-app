@@ -3,14 +3,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 4%;
+  padding-left: 5%;
+  padding-right: 2%;
   padding-top: 2%;
 
   @media screen and (min-width: $breakpoint-desktop) {
-    width: 96%;
-    margin-top: -40px;
-    margin-left: 18px;
+    width: 100%;
+    margin-top: -60px;
+  }
 
+  @media screen and (min-width: $breakpoint-desktop) and (max-width:$large) {
+    width: 96%;
   }
 }
 
@@ -18,20 +21,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 96%;
   margin-top: 2%;
 
   @media screen and (min-width: $breakpoint-desktop) {
     width: 96%;
-    margin-top: -25px;
-
-
   }
+
+
 }
 
 .informations {
   @include flex-column;
-
 
   &__titletags {
     @include flex-column;
@@ -43,7 +43,6 @@
       .titre-logement {
         @include font(20px, 500);
         line-height: 142.6%;
-
       }
 
       .endroit-logement {
@@ -68,6 +67,8 @@
     &__titletags {
       @include flex-column;
       margin-bottom: 50px;
+      overflow: hidden;
+      width: 75%;
 
       &__title {
         @include flex-column;
@@ -96,30 +97,36 @@
 
   &__proprietaire {
     @extend %flex-rowReverse;
-    width: 100%;
-    padding-top: 15px;
+    margin-right: 12px;
 
 
-    @media screen and (min-width: $breakpoint-desktop) {
+    @media screen and (min-width: $large) {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       align-items: flex-end;
-      width: 16%;
+      width: 18%;
       position: absolute;
-      right: 7%;
+      right: 5%;
+      margin-top: 14px;
+    }
 
+    @media screen and (min-width: $breakpoint-desktop) and (max-width:$large) {
+      // width: 22%;
+      position: absolute;
+      right: 6.5%;
+      display: flex;
+      flex-direction: column;
     }
 
     &__nom-Image {
       @extend %flex-rowCenterWithSpace;
       order: 1;
 
-      @media screen and (min-width: $breakpoint-desktop) {
-        width: 65%;
+      @media screen and (min-width: $large) {
         height: 40px;
         position: relative;
-        right: -1%;
+
       }
     }
 
@@ -129,7 +136,7 @@
 
       @media screen and (min-width: $breakpoint-desktop) {
         @include flex-center;
-        margin-bottom: 25px;
+
       }
 
     }
@@ -139,7 +146,7 @@
 .description-centent {
   width: 98%;
   @include flex-column;
-  padding-right: 4px;
+  margin-left: -4px;
 
   &__description {
     width: 100%;
@@ -150,14 +157,14 @@
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
-    width: 96%;
+    width: 97%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
     margin-top: -25px;
-    margin-left: 6px;
+
 
     &__description {
       width: 46%;
@@ -166,6 +173,10 @@
     &__equipement {
       width: 46%;
     }
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) and (max-width:$large) {
+    width: 100%;
   }
 
 }
