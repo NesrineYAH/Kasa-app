@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Kasa-app-YAHOUM/static/css/main.21229990.css",
-    "main.js": "/Kasa-app-YAHOUM/static/js/main.5a93e480.js",
+    "main.css": "/Kasa-app-YAHOUM/static/css/main.632b42e4.css",
+    "main.js": "/Kasa-app-YAHOUM/static/js/main.e0d676ca.js",
     "static/media/aboutBanner.png": "/Kasa-app-YAHOUM/static/media/aboutBanner.d9590614febb1cea1483.png",
     "static/media/homeBanner.png": "/Kasa-app-YAHOUM/static/media/homeBanner.4c36aadaecae8cfa7756.png",
     "static/media/LOGO.svg": "/Kasa-app-YAHOUM/static/media/LOGO.a6101328193bb3191cbcb50c120ec0d1.svg",
     "index.html": "/Kasa-app-YAHOUM/index.html",
-    "main.21229990.css.map": "/Kasa-app-YAHOUM/static/css/main.21229990.css.map",
-    "main.5a93e480.js.map": "/Kasa-app-YAHOUM/static/js/main.5a93e480.js.map"
+    "main.632b42e4.css.map": "/Kasa-app-YAHOUM/static/css/main.632b42e4.css.map",
+    "main.e0d676ca.js.map": "/Kasa-app-YAHOUM/static/js/main.e0d676ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.21229990.css",
-    "static/js/main.5a93e480.js"
+    "static/css/main.632b42e4.css",
+    "static/js/main.e0d676ca.js"
   ]
 }
