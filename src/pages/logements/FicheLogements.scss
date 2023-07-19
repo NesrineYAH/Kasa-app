@@ -99,7 +99,7 @@
   &__proprietaire {
     @extend %flex-rowReverse;
     margin-right: 8px;
-
+    margin-top: 22px;
 
     @media screen and (min-width: $large) {
       display: flex;
