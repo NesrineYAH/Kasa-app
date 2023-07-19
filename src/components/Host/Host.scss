@@ -23,4 +23,7 @@
     @media screen and (min-width: $breakpoint-desktop) {
         margin: 0 0 0 6px;
     }
+    @media screen and (min-width: $breakpoint-desktop) and (max-width:$large) {
+        
+    }
 }
