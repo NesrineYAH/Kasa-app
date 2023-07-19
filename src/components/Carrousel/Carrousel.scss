@@ -18,7 +18,7 @@
 
     @media screen and (min-width: $breakpoint-desktop) and (max-width:$large) {
         width: 100%;
-        margin-top: 1%;
+        margin-top: -3%;
     }
 
     .slide {
@@ -59,9 +59,9 @@
         }
 
         @media screen and (min-width: $breakpoint-desktop) and (max-width:$large) {
-            top: 24%;
+            top: 27%;
             height: 40px;
-            // left: 88%;
+
         }
     }
 
@@ -84,7 +84,7 @@
 
 
         @media screen and (min-width: $breakpoint-desktop) and (max-width:$large) {
-            top: 24%;
+            top: 27%;
             height: 40px;
             left: 7.5%;
         }
