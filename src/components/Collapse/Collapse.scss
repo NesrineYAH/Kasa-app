@@ -4,20 +4,22 @@
     @include small-radius;
     @include flex-center;
     position: relative;
-    min-height: 100vh;
-    margin-top: -22px;
+    top: -15px;
+
+
 
 
     @media screen and (min-width: $breakpoint-desktop) {
         width: 100%;
         padding: 30px;
         margin-bottom: 100px;
-        position: absolute;
+        position: relative;
+        top: 0px;
+        min-height: 100vh;
         left: 10%;
-        top: 40px;
         @include small-radius;
         @include flex-center;
-        margin-bottom: 25px;
+        margin-bottom: auto;
     }
 }
 
@@ -29,7 +31,7 @@
         width: 80%;
         position: absolute;
         left: 0%;
-        top: 36%;
+        top: -20px;
     }
 
 
